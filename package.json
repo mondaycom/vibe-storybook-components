@@ -42,8 +42,8 @@
     "deploy": "gh-pages -d storybook-static"
   },
   "peerDependencies": {
-    "react": "18.x",
-    "react-dom": "18.x"
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   },
   "dependencies": {
     "@storybook/components": "^7.0.26",
