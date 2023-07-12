@@ -6,8 +6,8 @@ import { BEMClass } from "../../helpers/bem-helper";
 import { RECOMMENDED_TITLE, NOT_RECOMMENDED_TITLE, COMPONENT_RULE_BASE_CSS_CLASS } from "./component-rule-constants";
 import "./component-rule.scss";
 
-// TODO check if it's working
 const bemHelper = BEMClass(COMPONENT_RULE_BASE_CSS_CLASS);
+
 export const ComponentRule = ({ component, description, isRecommended, className, componentContainerClassName }) => {
   const stateDescription = isRecommended ? "recommended" : "not-recommended";
   const titleIcon = isRecommended ? Check : CloseSmall;

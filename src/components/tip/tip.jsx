@@ -1,4 +1,4 @@
-// TODO
+// TODO uses attention box - not exported for now
 // import PropTypes from "prop-types";
 // import cx from "classnames";
 // import CoreAttentionBox from "../../../components/AttentionBox/AttentionBox";

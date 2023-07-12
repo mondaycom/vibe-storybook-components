@@ -1,34 +1,27 @@
 import cx from "classnames";
 import PropTypes from "prop-types";
 // import CoreLink from "../../../components/Link/Link";
-import "./link.scss";
 import { BEMClass } from "../../helpers/bem-helper";
+import "./link.scss";
 
 const BASE_CLASS = "monday-storybook-link";
 const bemHelper = BEMClass(BASE_CLASS);
 
-// TODO check gow it's working
-export const Link = ({ children, href, size, withoutSpacing, className }) => (
-  <a
-    href={href}
-    className={cx(BASE_CLASS, className, {
-      [bemHelper({ state: "small" })]: size === Link.sizes.SMALL,
-      [bemHelper({ state: "medium" })]: size === Link.sizes.MEDIUM,
-      [bemHelper({ state: "with-spacing" })]: !withoutSpacing
-    })}
-  >
-    {children}
-  </a>
-  // <CoreLink
-  //   text={children}
-  //   href={href}
-  //   componentClassName={cx(BASE_CLASS, className, {
-  //     [bemHelper({ state: "small" })]: size === Link.sizes.SMALL,
-  //     [bemHelper({ state: "medium" })]: size === Link.sizes.MEDIUM,
-  //     [bemHelper({ state: "with-spacing" })]: !withoutSpacing
-  //   })}
-  // />
-);
+// TODO not working for some reason
+export const Link = ({ children, href, size, withoutSpacing, className }) => {
+  return (
+    <a
+      href={href}
+      className={cx(BASE_CLASS, className, {
+        [bemHelper({ state: "small" })]: size === Link.sizes.SMALL,
+        [bemHelper({ state: "medium" })]: size === Link.sizes.MEDIUM,
+        [bemHelper({ state: "with-spacing" })]: !withoutSpacing
+      })}
+    >
+      {children}
+    </a>
+  );
+};
 
 // export const Link = ({ children, href, size, withoutSpacing, className }) => (
 //   <CoreLink

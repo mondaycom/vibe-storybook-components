@@ -1,4 +1,4 @@
-// TODO
+// TODO uses attention box - not exported for now
 // import AttentionBox from "../../../components/AttentionBox/AttentionBox";
 // import Tip from "../tip/tip";
 //
