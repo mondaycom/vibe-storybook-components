@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:KaiHotz/react-rollup-boilerplate.git"
+    "url": "git@github.com:mondaycom/monday-ui-storybook-blocks.git"
   },
   "homepage": "https://github.com/mondaycom/monday-ui-storybook-blocks",
   "main": "dist/index.js",
