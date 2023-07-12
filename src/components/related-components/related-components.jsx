@@ -6,15 +6,14 @@ import "./related-components.scss";
 const CSS_BASE_CLASS = "monday-storybook-related-components";
 const bemHelper = BEMClass(CSS_BASE_CLASS);
 
-export const RelatedComponents = ({ componentsNames }) => {
+export const RelatedComponents = ({ componentsNames, descriptionTypesMap }) => {
   const componentsDataElements = useMemo(
     () =>
       componentsNames.map((componentName, index) => {
         const key = `${componentName}_${index}`;
         return (
           <section key={key} className={bemHelper({ element: "component-data" })}>
-            {/*TODO*/}
-            {/*{descriptionTypesMap.get(componentName)}*/}
+            {descriptionTypesMap.get(componentName)}
           </section>
         );
       }),
