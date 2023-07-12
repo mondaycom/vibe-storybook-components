@@ -31,6 +31,7 @@ const config = {
     postcss({
       plugins: [],
       minimize: true,
+      modules: true,
     }),
     external({
       includeDependencies: true,

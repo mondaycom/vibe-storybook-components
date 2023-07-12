@@ -10,9 +10,7 @@
     "outDir": "./dist",
     "lib": ["dom", "dom.iterable", "esnext"],
     "paths": {
-      "*": [
-        "*",
-      ]
+      "*": ["*"]
     },
     "allowJs": true,
     "isolatedModules": true,
@@ -31,13 +29,6 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "src",
-  ],
-  "exclude": [
-    "coverage",
-    "config",
-    "dist",
-    "node_modules/**"
-  ]
+  "include": ["src", "types"],
+  "exclude": ["coverage", "config", "dist", "node_modules/**"]
 }
