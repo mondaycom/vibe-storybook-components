@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import cx from "classnames";
 import Check from "../../helpers/components/Icons/Check";
 import CloseSmall from "../../helpers/components/Icons/CloseSmall";
-import { BEMClass } from "../../helpers/bem-helper";
+import { BEMClass } from "../../helpers/utils/bem-helper";
 import { RECOMMENDED_TITLE, NOT_RECOMMENDED_TITLE, COMPONENT_RULE_BASE_CSS_CLASS } from "./component-rule-constants";
 import "./component-rule.scss";
 

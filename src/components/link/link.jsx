@@ -1,7 +1,7 @@
 import cx from "classnames";
 import PropTypes from "prop-types";
 // import CoreLink from "../../../components/Link/Link";
-import { BEMClass } from "../../helpers/bem-helper";
+import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./link.scss";
 
 const BASE_CLASS = "monday-storybook-link";

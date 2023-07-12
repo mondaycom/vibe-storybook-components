@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import PropTypes from "prop-types";
-import { BEMClass } from "../../helpers/bem-helper";
+import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./related-components.scss";
 
 const CSS_BASE_CLASS = "monday-storybook-related-components";
