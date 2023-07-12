@@ -15,12 +15,14 @@ import { UnstyledList } from "./unstyled-list/unstyled-list";
 import { UnstyledListItem } from "./unstyled-list-item/unstyled-list-item";
 import { FunctionArgument } from "./function-arguments/function-argument";
 import { FunctionArguments } from "./function-arguments/function-arguments";
+import { StoryDescription } from "./story-description/story-description";
 // import { Tip } from "./tip/tip";
 // import { ColorsDescription } from "./colors-description/colors-description";
-// import { StoryDescription } from "./story-description/story-description";
 
 export { default as LinkComponent } from "./link-component/link-component";
 export {
+  // Tip,
+  // ColorsDescription,
   SectionName,
   Title,
   ComponentRules,
@@ -34,9 +36,7 @@ export {
   Paragraph,
   Frame,
   VisualDescription,
-  // Tip,
-  // ColorsDescription,
-  // StoryDescription,
+  StoryDescription,
   UnstyledList,
   UnstyledListItem,
   FunctionArgument,
