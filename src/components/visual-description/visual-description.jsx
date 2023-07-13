@@ -1,3 +1,4 @@
+import React from "react";
 import cx from "classnames";
 import "./visual-description.scss";
 

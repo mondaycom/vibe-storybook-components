@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
 import Check from "../../helpers/components/Icons/Check";

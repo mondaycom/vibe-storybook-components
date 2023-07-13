@@ -1,6 +1,7 @@
+import React from "react";
 import PropTypes from "prop-types";
-import { BEMClass } from "../../../helpers/bem-helper";
 import { InformationBoxTitle } from "../information-box-title/information-box-title";
+import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./information-box.scss";
 
 const BASE_CSS_CLASS = "monday-storybook-information-box";

@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 import { InformationBox } from "../information-box/information-box";
 import "./related-component.scss";

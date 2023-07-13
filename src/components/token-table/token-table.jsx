@@ -1,3 +1,4 @@
+import React from "react";
 import { TableRow } from "./token-table-row";
 import { TableHeadItem } from "./token-table-head-item";
 import styles from "./token-table.module.scss";

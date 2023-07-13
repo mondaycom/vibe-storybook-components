@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import cx from "classnames";
-import { BEMClass } from "../../../helpers/bem-helper";
+import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./information-box-title.scss";
 
 const BASE_CSS_CLASS = "monday-storybook-information-box-title";

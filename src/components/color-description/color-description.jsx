@@ -1,3 +1,4 @@
+import React from "react";
 import cx from "classnames";
 import { VisualDescription } from "../visual-description/visual-description";
 import "./color-description.scss";

@@ -1,3 +1,4 @@
+import React from "react";
 import { SectionName } from "../section-name/section-name";
 import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./doc-footer.scss";

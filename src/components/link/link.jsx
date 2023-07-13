@@ -1,8 +1,9 @@
+import React from "react";
 import cx from "classnames";
 import PropTypes from "prop-types";
-// import CoreLink from "../../../components/Link/Link";
 import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./link.scss";
+// import CoreLink from "../../../components/Link/Link";
 
 const BASE_CLASS = "monday-storybook-link";
 const bemHelper = BEMClass(BASE_CLASS);
