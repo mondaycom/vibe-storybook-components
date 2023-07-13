@@ -20,13 +20,12 @@ import { StoryDescription } from "./story-description/story-description";
 import { InformationBox } from "./information-box/information-box";
 import { InformationBoxTitle } from "./information-box-title/information-box-title";
 import { TokenTable } from "./token-table/token-table";
+import { ColorDescription } from "./color-description/color-description";
 // import { Tip } from "./tip/tip";
-// import { ColorsDescription } from "./colors-description/colors-description";
 
 export { default as LinkComponent } from "./link-component/link-component";
 export {
   // Tip,
-  // ColorsDescription,
   SectionName,
   Title,
   ComponentRules,
@@ -48,5 +47,6 @@ export {
   FunctionArguments,
   InformationBox,
   InformationBoxTitle,
-  TokenTable
+  TokenTable,
+  ColorDescription
 };
