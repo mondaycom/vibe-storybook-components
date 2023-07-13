@@ -1,13 +1,13 @@
 {
-  "name": "monday-ui-storybook-blocks",
+  "name": "vibe-storybook-components",
   "version": "1.0.0",
   "description": "Collection of Vibe's Storybook components",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:mondaycom/monday-ui-storybook-blocks.git"
+    "url": "git@github.com:mondaycom/vibe-storybook-components.git"
   },
-  "homepage": "https://github.com/mondaycom/monday-ui-storybook-blocks",
+  "homepage": "https://github.com/mondaycom/vibe-storybook-components",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
