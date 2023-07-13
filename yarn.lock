@@ -5276,6 +5276,13 @@ boolbase@^1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
 
+boxt@^1.1.1:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/boxt/-/boxt-1.1.2.tgz#768b4830a5957b372b1c4b5b5a41b9166ee1a68f"
+  integrity sha512-YvBJK+TsjrUNAjJliqEKiGdbKlPhr9I8/FDtLsZvhmVWp+NmHBWKMkpmDNkqYpptEA2XXjYVcs30YGj0/bKWQg==
+  dependencies:
+    strip-ansi "^6.0.1"
+
 bplist-parser@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/bplist-parser/-/bplist-parser-0.2.0.tgz#43a9d183e5bf9d545200ceac3e712f79ebbe8d0e"
