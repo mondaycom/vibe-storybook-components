@@ -43,7 +43,7 @@ $text-line-height: 24px;
   @include small-text-without-color;
 }
 
-@mixin title-appearance{
+@mixin title-appearance {
   margin-bottom: $spacing-between-title-to-content;
   font-family: $header-primary-font;
   @include basic-text;
@@ -52,4 +52,10 @@ $text-line-height: 24px;
   letter-spacing: -0.21px;
   text-align: left;
   font-weight: 300;
+}
+
+@mixin font-link {
+  font: var(--font-general-label);
+  text-decoration: none;
+  color: var(--link-color);
 }
