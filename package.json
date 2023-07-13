@@ -43,7 +43,8 @@
   },
   "peerDependencies": {
     "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "react-dom": ">=16.9.0",
+    "monday-ui-style": ">=0.1.0"
   },
   "dependencies": {
     "@storybook/components": "^7.0.26",
