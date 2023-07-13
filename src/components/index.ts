@@ -17,6 +17,9 @@ import { UnstyledListItem } from "./unstyled-list-item/unstyled-list-item";
 import { FunctionArgument } from "./function-arguments/function-argument";
 import { FunctionArguments } from "./function-arguments/function-arguments";
 import { StoryDescription } from "./story-description/story-description";
+import { InformationBox } from "./information-box/information-box";
+import { InformationBoxTitle } from "./information-box-title/information-box-title";
+import { TokenTable } from "./token-table/token-table";
 // import { Tip } from "./tip/tip";
 // import { ColorsDescription } from "./colors-description/colors-description";
 
@@ -42,5 +45,8 @@ export {
   UnstyledList,
   UnstyledListItem,
   FunctionArgument,
-  FunctionArguments
+  FunctionArguments,
+  InformationBox,
+  InformationBoxTitle,
+  TokenTable
 };

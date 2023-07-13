@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
 import { BEMClass } from "../../helpers/utils/bem-helper";
