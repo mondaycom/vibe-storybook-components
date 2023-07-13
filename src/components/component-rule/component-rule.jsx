@@ -9,6 +9,7 @@ import "./component-rule.scss";
 
 const bemHelper = BEMClass(COMPONENT_RULE_BASE_CSS_CLASS);
 
+// TODO icons are not working
 export const ComponentRule = ({ component, description, isRecommended, className, componentContainerClassName }) => {
   const stateDescription = isRecommended ? "recommended" : "not-recommended";
   const titleIcon = isRecommended ? Check : CloseSmall;
