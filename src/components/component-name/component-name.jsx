@@ -2,17 +2,12 @@ import React from "react";
 import cx from "classnames";
 import "./component-name.scss";
 
-// TODO image is not displaying in Vibe's storybook - pass image as prop?
-export const ComponentName = ({ children, className, withFoundationBackground = false }) => {
-  return (
-    <h1
-      className={cx("monday-storybook-component-name", className, {
-        "monday-storybook-component-name--foundation": withFoundationBackground
-      })}
-    >
-      {children}
-    </h1>
-  );
+/**
+ * ComponentName is a component that displays the name of the component.
+ * Use className prop to give it some kind of background - image or color.
+ */
+export const ComponentName = ({ children, className }) => {
+  return <h1 className={cx("monday-storybook-component-name", className)}>{children}</h1>;
 };
 
 export default ComponentName;
