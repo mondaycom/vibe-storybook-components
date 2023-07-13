@@ -2,6 +2,7 @@ import React from "react";
 import cx from "classnames";
 import "./component-name.scss";
 
+// TODO image is not displaying in Vibe's storybook - pass image as prop?
 export const ComponentName = ({ children, className, withFoundationBackground = false }) => {
   return (
     <h1
