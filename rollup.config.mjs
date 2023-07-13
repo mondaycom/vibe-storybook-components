@@ -26,8 +26,7 @@ const config = {
   plugins: [
     postcss({
       plugins: [],
-      minimize: true,
-      modules: true
+      minimize: true
     }),
     external({
       includeDependencies: true
@@ -60,7 +59,6 @@ const config = {
       babelHelpers: "bundled",
       exclude: "**/node_modules/**"
     }),
-
     url(),
     svgr(),
     nodeResolve({
