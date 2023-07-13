@@ -3,6 +3,7 @@ import { SectionName } from "./section-name/section-name";
 import { Title } from "./title/title";
 import { ComponentRules } from "./component-rules/component-rules";
 import { UsageGuidelines } from "./usage-guidelines/usage-guidelines";
+import { RelatedComponent } from "./related-component/related-component";
 import { RelatedComponents } from "./related-components/related-components";
 import { AnchorListItem } from "./anchor-list-item/anchor-list-item";
 import { DocFooter } from "./doc-footer/doc-footer";
@@ -28,6 +29,7 @@ export {
   ComponentRules,
   ComponentName,
   UsageGuidelines,
+  RelatedComponent,
   RelatedComponents,
   AnchorListItem,
   DocFooter,
