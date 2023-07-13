@@ -15,5 +15,4 @@ component | an instance of the described component
 description / a textual description of the component purpose
 
 ## Technical notes
-- Please add a constant that describes the described component's name in the file: `related-components\component-description-map.js`. 
-- Please add mapping between the new constant component name to an instance of the RelatedComponent in  `related-components\component-description-map.js`.
+- Please add mapping between component name and corresponding `RelatedComponent` into the `descriptionComponentsMap` which you pass to the `RelatedComponents` component.
