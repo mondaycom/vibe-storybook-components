@@ -20,8 +20,8 @@
     "npm": ">=6"
   },
   "scripts": {
-    "start": "NODE_ENV=development BABEL_ENV=development yarn storybook",
-    "build": "rimraf dist && NODE_ENV=production BABEL_ENV=production rollup -c",
+    "start": "NODE_ENV=development yarn storybook",
+    "build": "rimraf dist && NODE_ENV=production rollup -c",
     "test": "jest",
     "test:coverage": "jest --coverage --forceExit --colors",
     "lint": "yarn check-types && yarn eslint && yarn stylelint",

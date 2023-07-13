@@ -1,63 +1,60 @@
-const isDevelopment = process.env.NODE_ENV !== 'production';
-const envPreset = isDevelopment
-  ? ['@babel/preset-env', { loose: true }]
-  : [
-      '@babel/preset-env',
-      {
-        modules: false,
-        // Allow importing core-js in entrypoint and use browserlist to select polyfills
-        useBuiltIns: 'entry',
-        // Set the corejs version we are using to avoid warnings in console
-        corejs: 3,
-        // Exclude transforms that make all code slower
-        exclude: ['transform-typeof-symbol'],
-        loose: true,
-        "targets": {
-          "node": "current"
-        }
-      },
-    ];
+const TESTING_STORYBOOK = process.env.testing === "storybook";
 
-module.exports = {
-  'presets': [
+module.exports = api => {
+  const env = process.env.NODE_ENV;
+  const storybook = !!process.env.storybook;
+  api.cache.using(() => env);
+
+  const plugins = [
+    "react-require",
     [
-      '@babel/preset-react',
+      "@babel/plugin-proposal-class-properties",
       {
-        development: isDevelopment,
-      },
+        loose: true
+      }
     ],
     [
-      '@babel/preset-typescript',
+      "@babel/plugin-proposal-private-methods",
       {
-        'isTSX': true,
-        'allExtensions': true,
-      },
+        loose: true
+      }
     ],
-    envPreset,
-  ],
-  'plugins': [
-    ['@babel/plugin-proposal-class-properties', { 'loose': true }],
-    '@babel/plugin-syntax-dynamic-import',
     [
-      '@babel/plugin-transform-runtime',
+      "@babel/plugin-proposal-private-property-in-object",
       {
-        corejs: false,
-        helpers: !isDevelopment,
-        regenerator: !isDevelopment,
-        useESModules: !isDevelopment,
-      },
+        loose: true
+      }
     ],
-  ],
-  'env': {
-    production: {
-      'plugins': [
-        [
-          'babel-plugin-transform-react-remove-prop-types',
-          {
-            removeImport: true,
-          },
-        ],
-      ],
+    storybook ? "react-docgen" : undefined,
+    "transform-react-remove-prop-types"
+  ].filter(Boolean);
+
+  return {
+    env: {
+      test: {
+        plugins: ["@babel/plugin-transform-runtime"]
+      }
     },
-  },
+    presets: [
+      [
+        "@babel/preset-env",
+        {
+          modules: env === "test" ? "commonjs" : false,
+          targets: TESTING_STORYBOOK
+            ? {
+                node: "current"
+              }
+            : {
+                chrome: "66",
+                ie: "11",
+                firefox: "51",
+                edge: "18",
+                node: "current"
+              }
+        }
+      ],
+      "@babel/preset-react"
+    ],
+    plugins
+  };
 };
