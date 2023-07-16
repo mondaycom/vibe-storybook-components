@@ -1,6 +1,6 @@
 import React from "react";
 
-const LinkComponent = ({ children, href, target: originalTarget, rel }) => {
+export const LinkComponent = ({ children, href, target: originalTarget, rel }) => {
   const onClick = event => {
     if (originalTarget) {
       return;
