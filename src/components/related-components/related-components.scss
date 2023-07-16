@@ -5,7 +5,7 @@ $related-components-grid-gap: $spacing-large;
 $related-components-cell-min-width: $grid-auto-fit-cell-width-medium;
 $related-components-grid-cell-array-calc: calc(33.3% - #{$related-components-grid-gap});
 
-.monday-storybook-related-components {
+.vibe-sb-comps-related-components {
   @include grid-auto-fit(
     $grid-gap: $related-components-grid-gap,
     $grid-cell-min-width: $related-components-cell-min-width,

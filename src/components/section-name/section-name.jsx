@@ -11,7 +11,7 @@ export const SectionName = ({ className, children, ...props }) => {
   );
   // eslint-disable-next-line jsx-a11y/heading-has-content
   return (
-    <h2 id={id} className={cx("monday-storybook-section-name", className)} {...props}>
+    <h2 id={id} className={cx("vibe-sb-comps-section-name", className)} {...props}>
       {children}
     </h2>
   );

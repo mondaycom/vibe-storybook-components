@@ -1,7 +1,7 @@
 @import "../../styles/global-css-settings";
 @import "../../styles/typography";
 
-.monday-storybook-component-rule {
+.vibe-sb-comps-component-rule {
   &_component {
     margin: 0;
     display: flex;
@@ -45,7 +45,7 @@
   }
 
   &--recommended {
-    .monday-storybook-component-rule {
+    .vibe-sb-comps-component-rule {
       &_icon {
         background: var(--positive-color);
       }
@@ -57,7 +57,7 @@
   }
 
   &--not-recommended {
-    .monday-storybook-component-rule {
+    .vibe-sb-comps-component-rule {
       &_icon {
         background: var(--negative-color);
       }

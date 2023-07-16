@@ -12,12 +12,12 @@ export const VisualDescription = ({
   visualDescriptionClassName
 }) => {
   return (
-    <div className={cx("monday-storybook-visual-description", className)} aria-label={ariaLabel}>
-      <figure className={cx("monday-storybook-visual-description_visual", visualDescriptionClassName)} aria-hidden>
+    <div className={cx("vibe-sb-comps-visual-description", className)} aria-label={ariaLabel}>
+      <figure className={cx("vibe-sb-comps-visual-description_visual", visualDescriptionClassName)} aria-hidden>
         {children}
       </figure>
-      <section className="monday-storybook-visual-description_text">
-        <h5 className="monday-storybook-visual-description_title">{title}</h5>
+      <section className="vibe-sb-comps-visual-description_text">
+        <h5 className="vibe-sb-comps-visual-description_title">{title}</h5>
         {description}
         {code && <code>{code}</code>}
       </section>

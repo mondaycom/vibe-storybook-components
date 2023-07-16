@@ -5,7 +5,7 @@ import { BEMClass } from "../../helpers/utils/bem-helper";
 import CoreLink from "../../helpers/components/Link/Link";
 import "./link.scss";
 
-const BASE_CLASS = "monday-storybook-link";
+const BASE_CLASS = "vibe-sb-comps-link";
 const bemHelper = BEMClass(BASE_CLASS);
 
 export const Link = ({ children, href, size, withoutSpacing, className }) => (

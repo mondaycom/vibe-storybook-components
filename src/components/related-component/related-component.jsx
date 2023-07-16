@@ -6,7 +6,7 @@ import "./related-component.scss";
 export const RelatedComponent = ({ component, title, description, href }) => {
   return (
     <InformationBox
-      component={<div className="monday-storybook-related-component_component">{component}</div>}
+      component={<div className="vibe-sb-comps-related-component_component">{component}</div>}
       title={title}
       description={description}
       href={href}

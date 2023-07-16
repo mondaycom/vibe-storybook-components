@@ -4,7 +4,7 @@ import cx from "classnames";
 import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./information-box-title.scss";
 
-const BASE_CSS_CLASS = "monday-storybook-information-box-title";
+const BASE_CSS_CLASS = "vibe-sb-comps-information-box-title";
 const bemHelper = BEMClass(BASE_CSS_CLASS);
 
 export const InformationBoxTitle = ({ children, href }) => {

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./related-components.scss";
 
-const CSS_BASE_CLASS = "monday-storybook-related-components";
+const CSS_BASE_CLASS = "vibe-sb-comps-related-components";
 const bemHelper = BEMClass(CSS_BASE_CLASS);
 
 export const RelatedComponents = ({ componentsNames, descriptionComponentsMap }) => {
@@ -20,7 +20,7 @@ export const RelatedComponents = ({ componentsNames, descriptionComponentsMap })
       }),
     [componentsNames]
   );
-  return <article className="monday-storybook-related-components">{componentsDataElements}</article>;
+  return <article className="vibe-sb-comps-related-components">{componentsDataElements}</article>;
 };
 
 RelatedComponents.propTypes = {

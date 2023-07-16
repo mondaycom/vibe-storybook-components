@@ -6,8 +6,8 @@ import "./color-description.scss";
 export const ColorDescription = ({ colorName, description, withBorder }) => {
   const color = (
     <div
-      className={cx("monday-storybook-color-description", {
-        "monday-storybook-color-description--with-border": withBorder
+      className={cx("vibe-sb-comps-color-description", {
+        "vibe-sb-comps-color-description--with-border": withBorder
       })}
       style={{ backgroundColor: `var(--${colorName})` }}
     />

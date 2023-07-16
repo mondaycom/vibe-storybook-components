@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./usage-guideline.scss";
 
-const CSS_BASE_CLASS = "monday-storybook-usage-guidelines";
+const CSS_BASE_CLASS = "vibe-sb-comps-usage-guidelines";
 const bemHelper = BEMClass(CSS_BASE_CLASS);
 
 export const UsageGuidelines = ({ guidelines }) => {

@@ -7,7 +7,7 @@ import "./component-name.scss";
  * Use className prop to give it some kind of background - image or color.
  */
 export const ComponentName = ({ children, className }) => {
-  return <h1 className={cx("monday-storybook-component-name", className)}>{children}</h1>;
+  return <h1 className={cx("vibe-sb-comps-component-name", className)}>{children}</h1>;
 };
 
 export default ComponentName;

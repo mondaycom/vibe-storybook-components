@@ -6,7 +6,7 @@ import { BEMClass } from "../../helpers/utils/bem-helper";
 import { ComponentRule } from "../component-rule/component-rule";
 import "./component-rules.scss";
 
-const CSS_BASE_CLASS = "monday-storybook-component-rules";
+const CSS_BASE_CLASS = "vibe-sb-comps-component-rules";
 const bemHelper = BEMClass(CSS_BASE_CLASS);
 
 export const ComponentRules = ({ rules, className }) => {

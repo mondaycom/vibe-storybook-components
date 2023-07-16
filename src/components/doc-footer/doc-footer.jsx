@@ -3,7 +3,7 @@ import { SectionName } from "../section-name/section-name";
 import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./doc-footer.scss";
 
-const CSS_BASE_CLASS = "monday-storybook-footer";
+const CSS_BASE_CLASS = "vibe-sb-comps-footer";
 const bemHelper = BEMClass(CSS_BASE_CLASS);
 
 export const DocFooter = ({ feedbackFormLink }) => (

@@ -14,7 +14,7 @@
 //     <CoreAttentionBox
 //       icon={null}
 //       type={type}
-//       componentClassName={cx("monday-storybook-tip", className)}
+//       componentClassName={cx("vibe-sb-comps-tip", className)}
 //       title={titleComposition}
 //       text={children}
 //     />

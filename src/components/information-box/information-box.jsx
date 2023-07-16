@@ -4,7 +4,7 @@ import { InformationBoxTitle } from "../information-box-title/information-box-ti
 import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./information-box.scss";
 
-const BASE_CSS_CLASS = "monday-storybook-information-box";
+const BASE_CSS_CLASS = "vibe-sb-comps-information-box";
 
 const bemHelper = BEMClass(BASE_CSS_CLASS);
 
