@@ -1,23 +1,23 @@
-import type { StorybookConfig } from "@storybook/react-vite";
+import { StorybookConfig } from "@storybook/react-webpack5";
 
 const config: StorybookConfig = {
-  stories: ["../src/**/*.stories.mdx"],
+  stories: ["../src/**/*.stories.mdx", "../storybook/**/*.stories.mdx"],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     {
-      name: "@storybook/addon-docs",
+      name: "@storybook/addon-styling",
       options: {
-        configureJSX: true,
-        babelOptions: {},
-        sourceLoaderOptions: null,
-        transcludeMarkdown: true
+        sass: {
+          // Require your Sass preprocessor here
+          implementation: require("sass")
+        }
       }
     }
   ],
   framework: {
-    name: "@storybook/react-vite",
+    name: "@storybook/react-webpack5",
     options: {}
   },
   docs: {
