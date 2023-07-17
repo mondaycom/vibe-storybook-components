@@ -17,6 +17,7 @@ export const StoryDescription = ({
   headerJustify
 }) => {
   const direction = useMemo(() => (vertical ? Flex.directions.COLUMN : Flex.directions.ROW), [vertical]);
+
   return (
     <Flex
       direction={direction}

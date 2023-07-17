@@ -17,6 +17,7 @@ export const ComponentRule = ({ component, description, isRecommended, className
     <CloseSmall className={bemHelper({ element: "icon" })} />
   );
   const title = isRecommended ? RECOMMENDED_TITLE : NOT_RECOMMENDED_TITLE;
+
   return (
     <section className={cx(COMPONENT_RULE_BASE_CSS_CLASS, bemHelper({ state: stateDescription }), className)}>
       <figure className={cx(bemHelper({ element: "component" }), componentContainerClassName)}>{component}</figure>

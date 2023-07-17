@@ -12,6 +12,7 @@ export const RelatedComponents = ({ componentsNames, descriptionComponentsMap })
     () =>
       componentsNames.map((componentName, index) => {
         const key = `${componentName}_${index}`;
+
         return (
           <section key={key} className={bemHelper({ element: "component-data" })}>
             {descriptionComponentsMap.get(componentName)}
@@ -20,6 +21,7 @@ export const RelatedComponents = ({ componentsNames, descriptionComponentsMap })
       }),
     [componentsNames]
   );
+
   return <article className="vibe-sb-comps-related-components">{componentsDataElements}</article>;
 };
 

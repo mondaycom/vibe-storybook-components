@@ -49,6 +49,5 @@ export {
   UnstyledList,
   UnstyledListItem,
   UsageGuidelines,
-  VisualDescription,
+  VisualDescription
 };
-

@@ -74,6 +74,7 @@ var MemoryStats = function () {
     nFractDigit = nFractDigit !== undefined ? nFractDigit : 0;
     precision = Math.pow(10, nFractDigit);
     i = Math.floor(Math.log(bytes) / Math.log(1024));
+
     return Math.round((bytes * precision) / Math.pow(1024, i)) / precision + " " + sizes[i];
   }
 

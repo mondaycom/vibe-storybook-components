@@ -13,6 +13,7 @@ export const InformationBoxTitle = ({ children, href }) => {
       {children}
     </h4>
   );
+
   return href ? (
     <a className={cx({ [bemHelper({ element: "link" })]: href })} href={href}>
       {title}

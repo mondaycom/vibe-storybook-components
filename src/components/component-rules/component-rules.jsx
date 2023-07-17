@@ -14,6 +14,7 @@ export const ComponentRules = ({ rules, className }) => {
     () =>
       rules.map((rule, index) => {
         const key = `rule-${index}`;
+
         return (
           <section className={cx(bemHelper({ element: "pair" }), className)} key={key}>
             <ComponentRule

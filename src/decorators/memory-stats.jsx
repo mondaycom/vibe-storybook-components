@@ -10,6 +10,7 @@ export function withMemoryStats(Story, options) {
   } else {
     stopMemoryStats();
   }
+
   return <Story />;
 }
 

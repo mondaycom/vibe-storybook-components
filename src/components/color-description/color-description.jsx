@@ -12,6 +12,7 @@ export const ColorDescription = ({ colorName, description, withBorder }) => {
       style={{ backgroundColor: `var(--${colorName})` }}
     />
   );
+
   return (
     <VisualDescription title={colorName} description={description}>
       {color}

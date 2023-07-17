@@ -48,6 +48,7 @@ const Flex: React.FC<FlexProps> & {
   const overrideStyle = useMemo(() => ({ ...style, gap: `${gap}px` }), [style, gap]);
   const onClickProps = useMemo(() => {
     if (onClick) return { elementType, ariaLabelledby };
+
     return { "aria-labelledby": ariaLabelledby };
   }, [onClick, elementType, ariaLabelledby]);
   const Element = elementType;

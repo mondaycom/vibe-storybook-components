@@ -13,6 +13,7 @@ export const LinkComponent = ({ children, href, target: originalTarget, rel }) =
       target.scrollIntoView?.();
     }
   };
+
   return (
     <a
       style={{ color: "var(--link-color)", textDecoration: "none" }}
