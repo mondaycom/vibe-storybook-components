@@ -31,7 +31,7 @@
     "stylelint": "stylelint \"**/*.{css,scss,sass}\"",
     "stylelint:fix": "stylelint \"**/*.{css,scss,sass}\" --fix",
     "check-types": "tsc",
-    "ci": "yarn lint && yarn test --watchAll=false",
+    "ci": "yarn install --immutable --immutable-cache --check-cache",
     "audit:fix": "npx yarn-audit-fix",
     "prepare": "yarn build",
     "prerelease": "yarn lint:fix && yarn test:coverage",
