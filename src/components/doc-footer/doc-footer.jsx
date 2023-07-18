@@ -10,7 +10,7 @@ export const DocFooter = ({ feedbackFormLink }) => (
   <div className={CSS_BASE_CLASS}>
     <SectionName>Feedback</SectionName>
     <div className={bemHelper({ element: "text" })}>
-      Help us improve this pattern by providing feedback, asking questions, and leaving any other comments on{" "}
+      Help us improve this pattern by providing feedback, asking questions, and leaving any other comments on
       <a href={feedbackFormLink} className={bemHelper({ element: "link" })}>
         this form
       </a>
