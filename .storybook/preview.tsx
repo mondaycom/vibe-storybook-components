@@ -17,7 +17,7 @@ import {
   UsageGuidelines
 } from "../src";
 import { ComponentNameDecorator } from "../storybook/components";
-import { DocsContainer, DocsPage } from "@storybook/blocks";
+import { DocsContainer, DocsPage, Unstyled } from "@storybook/blocks";
 import "monday-ui-style/dist/index.min.css";
 
 const preview: Preview = {
@@ -26,11 +26,10 @@ const preview: Preview = {
       inlineStories: true,
       container: ({ children, context }) => (
         <DocsContainer context={context}>
-          {/*TODO fix hack for removal of storybook styles*/}
-          <div className={"sb-unstyled"}>
+          <Unstyled>
             {children}
             {<DocFooter feedbackFormLink="// TODO add feedbackFormLink" />}
-          </div>
+          </Unstyled>
         </DocsContainer>
       ),
       page: DocsPage,
