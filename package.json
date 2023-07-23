@@ -18,6 +18,11 @@
       "require": "./dist/index.js"
     }
   },
+  "files": [
+    "src/",
+    "dist/",
+    "README.md"
+  ],
   "scripts": {
     "start": "NODE_ENV=development yarn storybook",
     "build": "NODE_ENV=production rollup -c",
