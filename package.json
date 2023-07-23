@@ -36,7 +36,7 @@
     "eslint:fix": "eslint . --ext .js,.jsx,.tsx,.ts --fix",
     "stylelint": "stylelint \"**/*.{css,scss,sass}\"",
     "stylelint:fix": "stylelint \"**/*.{css,scss,sass}\" --fix",
-    "ci": "yarn install --frozen-lockfile",
+    "ci": "yarn install --no-lockfile",
     "prerelease": "yarn lint:fix && yarn test:coverage",
     "release": "./scripts/release.js",
     "pre-release": "./scripts/prerelease.js",
