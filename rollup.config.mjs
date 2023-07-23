@@ -15,11 +15,16 @@ const config = {
   input: "./src/index.ts",
   output: [
     {
-      file: pkg.module,
-      indent: false,
-      strict: false,
+      file: pkg.main,
+      format: "cjs",
       exports: "named",
-      format: "es"
+      sourcemap: false
+    },
+    {
+      file: pkg.module,
+      format: "es",
+      exports: "named",
+      sourcemap: false
     }
   ],
   plugins: [
