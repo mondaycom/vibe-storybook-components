@@ -73,13 +73,10 @@
     "@storybook/addons": "^7.0.26",
     "@storybook/blocks": "^7.0.26",
     "@storybook/manager-api": "^7.1.0",
-    "@storybook/node-logger": "^7.0.26",
     "@storybook/react": "^7.0.26",
     "@storybook/react-webpack5": "^7.0.26",
     "@storybook/testing-library": "^0.2.0",
     "@storybook/theming": "^7.1.0",
-    "@svgr/rollup": "^8.0.1",
-    "@svgr/webpack": "^8.0.1",
     "@testing-library/dom": "^9.3.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
@@ -140,8 +137,7 @@
     "stylelint-config-recommended-scss": "^12.0.0",
     "typescript": "^5.1.6",
     "url-loader": "^4.1.1",
-    "webpack": "^5.88.1",
-    "yarn-audit-fix": "^9.3.12"
+    "webpack": "^5.88.1"
   },
   "changelog": {
     "labels": {
