@@ -1,9 +1,11 @@
 {
-  "name": "@mondaydotcomorg/sphera-ui-components",
-  "version": "0.0.10",
-  "description": "Sphera's shared internal UI components",
+  "name": "vibe-storybook-components",
+  "version": "0.0.2",
+  "description": "Collection of Vibe's Storybook components",
+  "license": "MIT",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git@github.com:mondaycom/vibe-storybook-components.git"
   },
   "sideEffects": [
     "*.scss",
@@ -12,12 +14,12 @@
   "main": "dist/index.js",
   "files": [
     "dist/",
-    "src/"
+    "src/",
+    "README.md"
   ],
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
     "release": "storybook build",
-    "upload-static-assets": "bash ../../scripts/upload-storybook.sh sphera-ui-components",
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
     "lint-fix": "eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix",
     "plop": "plop",
@@ -35,8 +37,6 @@
   "dependencies": {
     "@tanstack/react-table": "^8.9.3",
     "classnames": "^2.3.2",
-    "clsx": "^1.2.1",
-    "monday-ui-react-core": "^2.12.0",
     "style-inject": "^0.3.0"
   },
   "devDependencies": {
