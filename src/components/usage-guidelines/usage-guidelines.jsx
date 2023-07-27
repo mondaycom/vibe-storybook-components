@@ -1,9 +1,9 @@
-import React, { useMemo } from "react";
-import PropTypes from "prop-types";
-import { BEMClass } from "../../helpers/utils/bem-helper";
-import "./usage-guideline.scss";
+import React, { useMemo } from 'react';
+import PropTypes from 'prop-types';
+import { BEMClass } from '../../helpers/utils/bem-helper';
+import './usage-guideline.scss';
 
-const CSS_BASE_CLASS = "vibe-sb-comps-usage-guidelines";
+const CSS_BASE_CLASS = 'vibe-sb-comps-usage-guidelines';
 const bemHelper = BEMClass(CSS_BASE_CLASS);
 
 export const UsageGuidelines = ({ guidelines }) => {
@@ -11,8 +11,8 @@ export const UsageGuidelines = ({ guidelines }) => {
     () =>
       guidelines.map((guideline, index) => (
         // eslint-disable-next-line react/no-array-index-key
-        <span id={index} key={index} className={bemHelper({ element: "guideline" })}>
-          <span className={bemHelper({ element: "icon" })}>➡️</span>
+        <span id={index} key={index} className={bemHelper({ element: 'guideline' })}>
+          <span className={bemHelper({ element: 'icon' })}>➡️</span>
           {guideline}
         </span>
       )),
@@ -23,11 +23,11 @@ export const UsageGuidelines = ({ guidelines }) => {
 };
 
 UsageGuidelines.propTypes = {
-  guidelines: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.element]))
+  guidelines: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.element])),
 };
 
 UsageGuidelines.defaultProps = {
-  guidelines: []
+  guidelines: [],
 };
 
 export default UsageGuidelines;
