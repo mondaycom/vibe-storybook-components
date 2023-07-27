@@ -1,0 +1,32 @@
+.page {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.title {
+  margin: 0;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.subheader {
+  margin-bottom: var(--spacing-large);
+}
+
+.error {
+  background-color: lightcoral;
+}
+
+.content {
+  flex-grow: 1;
+  min-height: 0;
+}

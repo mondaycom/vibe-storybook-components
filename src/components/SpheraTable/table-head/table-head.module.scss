@@ -1,0 +1,44 @@
+.thead {
+  background-color: rgb(255, 255, 255);
+  padding: 6px 16px;
+  z-index: 1;
+  :first-child {
+    :global(th) {
+      border-radius: 0;
+      border-bottom: 2px solid var(--color-ui_grey);
+    }
+  }
+  .headerContentContainer {
+    padding-left: 4px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .headerTitle {
+    font-weight: bold;
+    margin-right: 3px;
+  }
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    padding: 3px;
+    padding-left: 9px;
+    border-radius: 4px;
+  }
+  .headerContainer:hover {
+    background-color: var(--color-asphalt-with-opacity);
+  }
+
+  .headerContainerRow {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .border {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-ui_grey);
+  }
+}

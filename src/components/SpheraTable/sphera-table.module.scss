@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  border-radius: 5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 1px !important;
+  margin-right: 1px !important;
+  position: relative;
+}
+.containerHeight {
+  height: 100%;
+}
+
+.containerHeightWithMenu {
+  height: calc(100% - 40px);
+}
+
+td,
+th {
+  max-width: 500px;
+}
+
+.resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: rgba(0, 0, 0, 0.2);
+  // cursor: col-resize;
+  user-select: none;
+  touch-action: none;
+}
+
+th:last-child {
+  .resizer {
+    display: none;
+  }
+}
+
+@media (hover: hover) {
+  .resizer {
+    opacity: 0.3;
+  }
+}
+
+.centeredText {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.pagination {
+  width: 100px;
+}
+
+.alignRight {
+  float: right;
+}
+
+.headerIconSize {
+  width: 1em;
+  height: 1em;
+}
+
+.textSearch {
+  min-width: 12em !important;
+}
+
+.headerContentContainer {
+  display: flex;
+  align-items: center;
+}
+.headerTitle {
+  font-weight: bold;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.headerContainerRow {
+  flex-direction: row;
+  align-items: center;
+}
