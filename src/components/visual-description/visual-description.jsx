@@ -10,8 +10,7 @@ export const VisualDescription = ({
   code,
   className,
   visualDescriptionClassName
-}) => {
-  return (
+}) => (
     <div className={cx("vibe-sb-comps-visual-description", className)} aria-label={ariaLabel}>
       <figure className={cx("vibe-sb-comps-visual-description_visual", visualDescriptionClassName)} aria-hidden>
         {children}
@@ -23,6 +22,5 @@ export const VisualDescription = ({
       </section>
     </div>
   );
-};
 
 export default VisualDescription;

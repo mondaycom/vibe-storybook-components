@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
-import { useMemo } from "react";
 import "./section-name.scss";
 
 export const SectionName = ({ className, children, ...props }) => {

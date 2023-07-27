@@ -1,5 +1,4 @@
-import React from "react";
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 import cx from "classnames";
 import PropTypes from "prop-types";
 import Flex from "../../helpers/components/Flex/Flex";
@@ -22,15 +21,15 @@ export const StoryDescription = ({
     <Flex
       direction={direction}
       gap={Flex.gaps.MEDIUM}
-      justify={justify ? justify : Flex.justify.START}
-      align={align ? align : undefined}
+      justify={justify || Flex.justify.START}
+      align={align || undefined}
       className={className}
     >
       <Flex
         className={cx(styles.description, { [styles.vertical]: vertical })}
         style={{ width: "120px", ...headerStyle }}
-        justify={headerJustify ? headerJustify : Flex.justify.START}
-        align={headerAlign ? headerAlign : Flex.align.CENTER}
+        justify={headerJustify || Flex.justify.START}
+        align={headerAlign || Flex.align.CENTER}
       >
         {description}
       </Flex>

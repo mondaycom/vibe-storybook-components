@@ -1,5 +1,4 @@
-import React from "react";
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import { BEMClass } from "../../helpers/utils/bem-helper";
 import "./related-components.scss";

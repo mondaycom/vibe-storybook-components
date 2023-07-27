@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import { InformationBox } from "../information-box/information-box";
 import "./related-component.scss";
 
-export const RelatedComponent = ({ component, title, description, href }) => {
-  return (
+export const RelatedComponent = ({ component, title, description, href }) => (
     <InformationBox
       component={<div className="vibe-sb-comps-related-component_component">{component}</div>}
       title={title}
@@ -12,7 +11,6 @@ export const RelatedComponent = ({ component, title, description, href }) => {
       href={href}
     />
   );
-};
 
 RelatedComponent.propTypes = {
   component: PropTypes.element,

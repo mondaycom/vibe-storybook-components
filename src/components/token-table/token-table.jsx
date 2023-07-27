@@ -3,25 +3,19 @@ import { TableRow } from "./token-table-row";
 import { TableHeadItem } from "./token-table-head-item";
 import styles from "./token-table.module.scss";
 
-export const TokenTable = ({ theadData, tbodyData }) => {
-  return (
+export const TokenTable = ({ theadData, tbodyData }) => (
     <div className={styles.tableWrapper}>
       <table className={styles.table}>
         <thead>
           <tr>
-            {theadData.map(h => {
-              return <TableHeadItem key={h} item={h} />;
-            })}
+            {theadData.map(h => <TableHeadItem key={h} item={h} />)}
           </tr>
         </thead>
         <tbody>
-          {tbodyData.map(item => {
-            return <TableRow key={item.id} data={item.items} />;
-          })}
+          {tbodyData.map(item => <TableRow key={item.id} data={item.items} />)}
         </tbody>
       </table>
     </div>
   );
-};
 
 export default TokenTable;
