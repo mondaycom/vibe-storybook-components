@@ -25,7 +25,7 @@
     "start": "yarn build --watch",
     "test": "jest --passWithNoTests",
     "test:update": "yarn test -- -u",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 7012",
     "build-storybook": "storybook build"
   },
   "browserslist": [
