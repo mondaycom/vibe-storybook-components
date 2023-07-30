@@ -33,7 +33,7 @@ export const ComponentRules = ({ rules, className }) => {
           </section>
         );
       }),
-    [rules]
+    [rules],
   );
 
   return <article className={CSS_BASE_CLASS}>{componentRulesElements}</article>;
@@ -52,7 +52,7 @@ ComponentRules.propTypes = {
       }),
       className: PropTypes.string,
       componentContainerClassName: PropTypes.string,
-    })
+    }),
   ),
 };
 

@@ -66,7 +66,7 @@ const Flex: React.FC<FlexProps> & {
         className,
         {
           [styles.wrap]: wrap,
-        }
+        },
       )}
       tabIndex={tabIndex}
       onClick={onClick}

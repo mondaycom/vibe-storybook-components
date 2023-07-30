@@ -16,7 +16,7 @@ export const UsageGuidelines = ({ guidelines }) => {
           {guideline}
         </span>
       )),
-    [guidelines]
+    [guidelines],
   );
 
   return <article className={CSS_BASE_CLASS}>{guidelinesElements}</article>;

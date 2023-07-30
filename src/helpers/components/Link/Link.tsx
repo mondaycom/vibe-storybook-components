@@ -53,7 +53,7 @@ const Link: VibeComponent<LinkProps, HTMLAnchorElement> & {
       inheritFontSize = false,
       inlineText = false,
     },
-    ref: React.ForwardedRef<HTMLAnchorElement>
+    ref: React.ForwardedRef<HTMLAnchorElement>,
   ) => {
     const onClickWrapper = useCallback(
       (e: React.MouseEvent<HTMLElement>) => {
@@ -62,7 +62,7 @@ const Link: VibeComponent<LinkProps, HTMLAnchorElement> & {
         }
         onClick && onClick(e);
       },
-      [disableNavigation, onClick]
+      [disableNavigation, onClick],
     );
 
     return (
@@ -83,7 +83,7 @@ const Link: VibeComponent<LinkProps, HTMLAnchorElement> & {
         <span className={cx(styles.text, textClassName)}>{text}</span>
       </a>
     );
-  }
+  },
 );
 
 Object.assign(Link, {

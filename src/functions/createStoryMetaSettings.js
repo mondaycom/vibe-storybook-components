@@ -35,7 +35,7 @@ function createMappedActionToInputPropDecorator(actionName, linkedToPropValue) {
         setPropValue(newPropValue);
         createAction(newPropValue);
       },
-      [setPropValue, createAction]
+      [setPropValue, createAction],
     );
 
     context.args[actionName] = injectedCallback;
@@ -63,7 +63,7 @@ export function createStoryMetaSettings({
 
       return acc;
     },
-    { options: [], mapping: {} }
+    { options: [], mapping: {} },
   );
 
   // set enum allowed values inside argsTypes object
