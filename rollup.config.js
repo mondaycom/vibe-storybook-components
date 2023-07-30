@@ -29,7 +29,7 @@ export default {
     commonjs(),
     json(),
     nodeResolve({
-      extensions: [...EXTENSIONS, '.json'],
+      extensions: [...EXTENSIONS, '.json', '.css'],
     }),
     typescript({
       tsconfig: path.join(ROOT_PATH, 'tsconfig.json'),
