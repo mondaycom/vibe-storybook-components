@@ -14,29 +14,62 @@ $ npm install vibe-storybook-components
 
 ## Usage
 
-All the package content is imported from the library's root entry:
+**Styles**: Import the library's styles in your storybook `preview.js` file:
 
 ```javascript
-import { ComponentName } from "vibe-storybook-components";
+import 'vibe-storybook-components/index.css';
 ```
 
-After that these components can be used in your storybook: either directly in story files
+**Components**:
+There are 2 ways to use the components:
+
+1. Import the components from the library's main entry, like this:
+
+```javascript
+import { ComponentName } from 'vibe-storybook-components';
+```
+
+and then use in a story like this:
+
 ```mdxjs
 <ComponentName>Button</ComponentName>
 ```
-or in the storybook `preview.js` file
-```js
+
+2. Import and map the components once in the storybook's `preview.js` file, like this:
+
+```javascript
+import { ComponentName } from 'vibe-storybook-components';
+```
+
+```javascript
+import { ComponentName } from 'vibe-storybook-components';
+...
 addParameters({
-    docs: {
-        components: {
-            h1: ComponentName
-        }
-    }
+  docs: {
+    components: {
+      h1: ComponentName,
+      ComponentName
+    },
+  },
 });
 ```
-so that they can be used in the storybook's markdown files like this:
+
+and then use in the storybook's markdown files like this:
+
 ```mdxjs
 # Button
+```
+
+or like this
+
+```mdxjs
+<h1>Button</h1>
+```
+
+or like this without a corresponding import
+
+```mdxjs
+<ComponentName>Button</ComponentName>
 ```
 
 ### Styling

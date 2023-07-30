@@ -47,14 +47,17 @@ export default {
       },
     }),
     postcss({
-      /**
-       * Normally, this plugin expects a local version of "node_modules" to be present, but since
-       * we're externalizing all "node_modules", it doesn't exist.
-       * This little hack makes sure we're using "node_modules" instead of what the plugin expects.
-       */
-      inject(cssVariableName) {
-        return `import styleInject from 'style-inject';\nstyleInject(${cssVariableName});`;
-      },
+      use: [
+        [
+          'sass',
+          {
+            includePaths: ['src'],
+          },
+        ],
+      ],
+      extensions: ['.css', '.scss'],
+      extract: true,
+      minimize: true,
       plugins: [autoprefixer()],
       autoModules: true,
     }),
