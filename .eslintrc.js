@@ -1,10 +1,10 @@
 const path = require('path');
-
 module.exports = {
   extends: [
     './node_modules/@mondaydotcomorg/global-config/configs/eslint.js',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:storybook/recommended',
   ],
   root: true,
   plugins: ['prettier', 'react', 'import', 'jsx-a11y', 'json', 'markdown', 'jest', 'lodash'],
@@ -26,7 +26,6 @@ module.exports = {
     react: {
       version: 'detect',
     },
-
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
@@ -41,7 +40,9 @@ module.exports = {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
         moduleDirectory: ['node_modules', 'src/'],
       },
-      [path.resolve('./eslint/resolver.js')]: { someConfig: 1 },
+      [path.resolve('./eslint/resolver.js')]: {
+        someConfig: 1,
+      },
     },
   },
   rules: {
