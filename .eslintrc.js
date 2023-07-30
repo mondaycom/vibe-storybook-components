@@ -1,4 +1,5 @@
 const path = require('path');
+
 module.exports = {
   extends: [
     './node_modules/@mondaydotcomorg/global-config/configs/eslint.js',
