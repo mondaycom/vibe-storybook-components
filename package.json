@@ -29,9 +29,6 @@
   "browserslist": [
     "extends browserslist-config-monday"
   ],
-  "resolutions": {
-    "react": "17.0.2"
-  },
   "dependencies": {
     "@storybook/addon-actions": "^7.1.1",
     "@tanstack/react-table": "^8.9.3",
