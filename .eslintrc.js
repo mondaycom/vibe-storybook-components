@@ -1,12 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  extends: [
-    './node_modules/@mondaydotcomorg/global-config/configs/eslint.js',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:storybook/recommended',
-  ],
+  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:storybook/recommended'],
   root: true,
   plugins: ['prettier', 'react', 'import', 'jsx-a11y', 'json', 'markdown', 'jest', 'lodash'],
   env: {
