@@ -114,6 +114,7 @@
     "typescript-plugin-css-modules": "^5.0.1"
   },
   "peerDependencies": {
+    "monday-ui-style": ">=0.1.0",
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
   }
