@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { execa } from 'execa';
+import { execaSync } from 'execa';
 
 function getVersionPreid() {
   const branchName = process.env.BRANCH_NAME;
@@ -19,7 +19,7 @@ function getVersionPreid() {
 
 function pushBumpedVersion() {
   const preid = getVersionPreid();
-  const { stdout } = execa.sync('npm', ['version', 'prerelease', `--preid=${preid}`, '--no-git-tag-version']);
+  const { stdout } = execaSync('npm', ['version', 'prerelease', `--preid=${preid}`, '--no-git-tag-version']);
   const versionId = stdout.toString().trim();
 
   // Notify new prerelease version was created

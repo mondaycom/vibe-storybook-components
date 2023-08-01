@@ -2,7 +2,7 @@
 
 import { readFileSync, writeFileSync } from 'fs';
 import path from 'path';
-import { execa } from 'execa';
+import { execaSync } from 'execa';
 import chalk from 'chalk';
 import boxt from 'boxt';
 
@@ -69,7 +69,7 @@ function formatChanges(changelogText) {
 }
 
 function buildChangelogSinceLastVersion() {
-  const { stdout } = execa.sync('npx', ['lerna-changelog', '--from', `v${require('../package.json').version}`]);
+  const { stdout } = execaSync('npx', ['lerna-changelog', '--from', `v${require('../package.json').version}`]);
 
   return stdout;
 }
@@ -97,7 +97,7 @@ function getCurrentVersion() {
 }
 
 function bumpVersion(strategy) {
-  execa.sync('npm', ['version', strategy]);
+  execaSync('npm', ['version', strategy]);
 }
 
 function logNothingToDo(changeLogText) {
