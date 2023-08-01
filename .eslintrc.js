@@ -1,19 +1,78 @@
-const path = require('path');
+const commonRules = {
+  'react/display-name': 'off',
+  'object-curly-newline': 'off',
+  'no-debugger': 'error',
+  'global-require': 'off',
+  'no-unused-expressions': 'off',
+  'react/forbid-foreign-prop-types': 'off',
+  'no-console': 'off',
+  'consistent-return': 'off',
+  'no-use-before-define': 'off',
+  'one-var': 'off',
+  'default-case': 'off',
+  'func-names': 'off',
+  'react/sort-comp': 'off',
+  'class-methods-use-this': 'off',
+  radix: 'off',
+  'no-underscore-dangle': 'off',
+  'import/prefer-default-export': 'off',
+  'no-plusplus': 'off',
+  'react/react-in-jsx-scope': 0,
+  'react/no-danger': 'error',
+  'react/jsx-one-expression-per-line': 'off',
+  'react/prop-types': 0,
+  'react/forbid-prop-types': 'off',
+  'react/function-component-definition': 'off',
+  'default-param-last': 'off',
+  'react/require-default-props': ['error'],
+  'react/jsx-props-no-spreading': 0,
+  'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+  'react/default-props-match-prop-types': 'error',
+  'react/jsx-boolean-value': 'off',
+  'arrow-parens': 'off',
+  'implicit-arrow-linebreak': 'off',
+  'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+};
+const commonPlugins = ['import', 'react', 'json', 'markdown', 'jest'];
+const commonExtends = ['plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:prettier/recommended'];
 
 module.exports = {
-  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:storybook/recommended'],
-  root: true,
-  plugins: ['prettier', 'react', 'import', 'jsx-a11y', 'json', 'markdown', 'jest', 'lodash'],
+  overrides: [
+    {
+      files: ['*.jest.js', 'jest.setup.js', 'jest.init.js'],
+      env: {
+        jest: true,
+        'jest/globals': true,
+      },
+    },
+    {
+      files: ['.eslintrc.js', 'scripts/**/*.js', '__mocks__/**/*.js', 'rollup.config.js'],
+      env: {
+        node: true,
+      },
+    },
+    {
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+      extends: [
+        ...commonExtends,
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+      ],
+      plugins: [...commonPlugins, '@typescript-eslint'],
+      rules: {
+        ...commonRules,
+        '@typescript-eslint/ban-ts-comment': ['warn'],
+        'no-unused-vars': 'off',
+        'react/require-default-props': 'off',
+        '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+        '@typescript-eslint/no-empty-function': 'off',
+      },
+    },
+  ],
   env: {
     browser: true,
-    es2022: true,
-  },
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 13,
-    sourceType: 'module',
+    es2021: true,
   },
   settings: {
     jest: {
@@ -22,63 +81,18 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
-    'import/resolver': {
-      // optionally, if TypeScript project:
-      // https://github.com/alexgorbatchev/eslint-import-resolver-typescript
-      typescript: {
-        alwaysTryTypes: false,
-        project: __dirname,
-      },
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        moduleDirectory: ['node_modules', 'src/'],
-      },
-      [path.resolve('./eslint/resolver.js')]: {
-        someConfig: 1,
-      },
-    },
   },
+  extends: [...commonExtends, 'eslint:recommended'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 13,
+    sourceType: 'module',
+  },
+  plugins: [...commonPlugins],
   rules: {
-    'global-require': 'off',
-    'func-names': 'off',
-    'import/no-dynamic-require': 'off',
-    'import/prefer-default-export': 'off',
-    'lodash/import-scope': [2, 'member'],
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: true,
-      },
-    ],
-    'import/extensions': 'off',
-    'react/jsx-filename-extension': [
-      'error',
-      {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    ],
-    'react/react-in-jsx-scope': 0,
-    'react/no-danger': 'warn',
-    'react/jsx-one-expression-per-line': 'off',
-    'react/prop-types': 0,
-    'react/forbid-prop-types': 'off',
-    'react/function-component-definition': 'off',
-    'react/display-name': 'off',
-    'no-unused-vars': 'warn',
-    'no-unused-expressions': 'off',
-    radix: 'off',
-    'no-shadow': 'warn',
-    'no-param-reassign': 'warn',
+    ...commonRules,
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
   },
-  overrides: [
-    {
-      files: ['*.jest.js', 'jest.config.js', '**/__tests__/*.js'],
-      env: {
-        jest: true,
-      },
-    },
-  ],
 };
