@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const execa = require('execa');
+import { execa } from 'execa';
 
 function getVersionPreid() {
   const branchName = process.env.BRANCH_NAME;

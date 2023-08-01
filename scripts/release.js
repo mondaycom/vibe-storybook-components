@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const path = require('path');
-const execa = require('execa');
-const chalk = require('chalk');
-const boxt = require('boxt');
+import { readFileSync, writeFileSync } from 'fs';
+import path from 'path';
+import { execa } from 'execa';
+import chalk from 'chalk';
+import boxt from 'boxt';
 
 const VERSION_STRATEGIES = {
   PATCH: 'patch',
@@ -44,14 +44,14 @@ function release() {
 }
 
 function updateChangelog(newChangelogSection) {
-  const currentChangelog = fs.readFileSync(CHANGELOG_PATH, 'utf8');
+  const currentChangelog = readFileSync(CHANGELOG_PATH, 'utf8');
 
   const newChangelog = currentChangelog.replace(
     CHANGELOG_HEADERS.TITLE,
     [CHANGELOG_HEADERS.TITLE, '', newChangelogSection].join('\n'),
   );
 
-  fs.writeFileSync(CHANGELOG_PATH, newChangelog, 'utf8');
+  writeFileSync(CHANGELOG_PATH, newChangelog, 'utf8');
 }
 
 function formatChanges(changelogText) {
@@ -91,7 +91,7 @@ function getNewVersionStrategy(changelogText) {
 }
 
 function getCurrentVersion() {
-  const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8'));
+  const packageJson = JSON.parse(readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8'));
 
   return packageJson.version;
 }
