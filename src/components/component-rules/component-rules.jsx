@@ -33,7 +33,7 @@ export const ComponentRules = ({ rules, className }) => {
           </section>
         );
       }),
-    [rules],
+    [className, rules],
   );
 
   return <article className={CSS_BASE_CLASS}>{componentRulesElements}</article>;

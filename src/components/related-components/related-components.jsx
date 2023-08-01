@@ -18,7 +18,7 @@ export const RelatedComponents = ({ componentsNames, descriptionComponentsMap })
           </section>
         );
       }),
-    [componentsNames],
+    [componentsNames, descriptionComponentsMap],
   );
 
   return <article className="vibe-sb-comps-related-components">{componentsDataElements}</article>;
