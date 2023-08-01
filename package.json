@@ -27,9 +27,8 @@
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix",
     "prettier:fix": "prettier --write \"{,!(node_modules)/**/}*.{js,jsx,ts,tsx}\"",
-    "start": "yarn build --watch",
     "test": "jest --passWithNoTests",
-    "test:update": "yarn test -- -u",
+    "test:update": "npm run test -- -u",
     "storybook": "storybook dev -p 7012",
     "build-storybook": "storybook build"
   },
