@@ -89,7 +89,6 @@
     "jest-environment-jsdom": "^29.6.2",
     "mini-css-extract-plugin": "^2.6.0",
     "mocha": "^10.2.0",
-    "monday-ui-style": "^0.1.177",
     "postcss": "^8.4.27",
     "postcss-loader": "^7.3.3",
     "prettier": "^3.0.0",
@@ -110,7 +109,6 @@
     "typescript-plugin-css-modules": "^5.0.1"
   },
   "peerDependencies": {
-    "monday-ui-style": ">=0.1.0",
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
   },
