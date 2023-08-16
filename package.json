@@ -15,6 +15,7 @@
   "exports": {
     ".": "./dist/index.js",
     "./index.css": "./dist/index.css",
+    "./tokens": "./dist/tokens.scss",
     "./package.json": "./package.json"
   },
   "files": [
