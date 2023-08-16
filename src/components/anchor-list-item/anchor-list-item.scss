@@ -2,7 +2,7 @@
 @import "../../styles/typography";
 
 .vibe-sb-comps-anchor-list-item {
-  color: var(--link-color);
+  color: var(--sb-link-color);
   font-size: $anchor-font-size;
   line-height: $text-line-height;
 
@@ -11,6 +11,6 @@
   }
 
   a {
-    color: var(--link-color);
+    color: var(--sb-link-color);
   }
 }

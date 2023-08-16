@@ -5,7 +5,7 @@
 .link {
   display: flex;
   align-items: center;
-  color: var(--link-color);
+  color: var(--sb-link-color);
   @include font-link();
   text-decoration: none;
   writing-mode: horizontal-tb;

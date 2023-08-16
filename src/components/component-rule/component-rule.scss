@@ -9,7 +9,7 @@
     align-items: center;
     height: 200px;
     border-radius: $border-radius-medium;
-    background: var(--dark-background-on-secondary-color);
+    background: var(--sb-dark-background-on-secondary-color);
     & > * {
       margin-right: $spacing-small;
     }
@@ -36,7 +36,7 @@
     height: 20px;
     border-radius: $border-radius-small;
     margin-right: $spacing-small-medium;
-    color: var(--text-color-on-primary);
+    color: var(--sb-text-color-on-primary);
   }
 
   &_description {
@@ -47,11 +47,11 @@
   &--recommended {
     .vibe-sb-comps-component-rule {
       &_icon {
-        background: var(--positive-color);
+        background: var(--sb-positive-color);
       }
 
       &_component {
-        box-shadow: inset 0 3px 0 var(--positive-color);
+        box-shadow: inset 0 3px 0 var(--sb-positive-color);
       }
     }
   }
@@ -59,11 +59,11 @@
   &--not-recommended {
     .vibe-sb-comps-component-rule {
       &_icon {
-        background: var(--negative-color);
+        background: var(--sb-negative-color);
       }
 
       &_component {
-        box-shadow: inset 0 3px 0 var(--negative-color);
+        box-shadow: inset 0 3px 0 var(--sb-negative-color);
       }
     }
   }

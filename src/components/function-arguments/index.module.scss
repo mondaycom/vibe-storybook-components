@@ -24,11 +24,11 @@
 }
 
 .argument-type {
-  color: var(--color-purple);
+  color: var(--sb-color-purple);
 
   &:before,
   &:after {
-    color: var(--color-winter);
+    color: var(--sb-color-winter);
   }
 
   &:before {
@@ -41,6 +41,6 @@
 }
 
 .required {
-  color: var(--color-sofia_pink);
+  color: var(--sb-color-sofia_pink);
   font-size: 80%;
 }

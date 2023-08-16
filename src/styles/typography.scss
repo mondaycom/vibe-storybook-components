@@ -24,7 +24,7 @@ $small-text-font-size: 14px;
 $text-line-height: 24px;
 
 @mixin basic-text {
-  color: var(--primary-text-color);
+  color: var(--sb-primary-text-color);
 }
 
 @mixin content-text-without-color {
@@ -64,5 +64,5 @@ $text-line-height: 24px;
 @mixin font-link {
   font: $font-general-label;
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--sb-link-color);
 }
