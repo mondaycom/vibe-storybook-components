@@ -1,0 +1,60 @@
+:root,
+.light-app-theme,
+.default-app-theme
+{
+  --link-color: #1f76c2;
+  --primary-background-color: #ffffff;
+  --primary-text-color: #323338;
+  --ui-border-color: #c3c6d4;
+  --dark-background-on-secondary-color: #f6f7fb;
+  --text-color-on-primary: #ffffff;
+  --positive-color: #00854d;
+  --negative-color: #d83a52;
+  --color-purple: #a25ddc;
+  --color-winter: #9aadbd;
+  --color-sofia_pink: #ff158a;
+  --layout-border-color: #d0d4e4;
+  --secondary-background-color: #ffffff;
+}
+
+.dark-app-theme {
+  --link-color: #69a7ef;
+  --primary-background-color: #181b34;
+  --primary-text-color: #d5d8df;
+  --ui-border-color: #797e93;
+  --dark-background-on-secondary-color: #4b4e69;
+  --color-purple: #b57de3;
+  --color-winter: #aebdca;
+  --color-sofia_pink: #ff44a1;
+  --layout-border-color: #4b4e69;
+  --secondary-background-color: #30324e;
+
+}
+
+.black-app-theme {
+  --link-color: #69a7ef;
+  --primary-background-color: #111111;
+  --primary-text-color: #eeeeee;
+  --ui-border-color: #8d8d8d;
+  --dark-background-on-secondary-color: #4b4e69;
+  --color-purple: #b57de3;
+  --color-winter: #aebdca;
+  --color-sofia_pink: #ff44a1;
+  --layout-border-color: #636363;
+  --secondary-background-color: #2c2c2c;
+}
+
+.hacker_theme-app-theme {
+  --link-color: #bd93f9;
+  --primary-background-color: #282a36;
+  --primary-text-color: #d5d8df;
+  --ui-border-color: #797e93;
+  --dark-background-on-secondary-color: #595959;
+  --positive-color: #50fa7b;
+  --negative-color: #ff5555;
+  --color-purple: #b57de3;
+  --color-winter: #aebdca;
+  --color-sofia_pink: #ff44a1;
+  --layout-border-color: #414458;
+  --secondary-background-color: #30324e;
+}
