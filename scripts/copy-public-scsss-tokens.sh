@@ -6,8 +6,8 @@ destination_folder="./dist/styles"
 # Copy the styles folder and its contents
 cp -r "$source_folder" "$destination_folder"
 
-source_index="./src/tokens.scss"
-destination_index="./dist/tokens.scss"
+source_index="./src/_tokens.scss"
+destination_index="./dist/_tokens.scss"
 # Copy the tokens index as partial
 cp "$source_index" "$destination_index"
 
