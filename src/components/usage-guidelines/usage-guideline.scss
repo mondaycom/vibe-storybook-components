@@ -5,7 +5,7 @@
 .vibe-sb-comps-usage-guidelines{
   &_guideline {
     color: var(--primary-text-color);
-    margin: var(--spacing-medium) var(--spacing-small);
+    margin: $spacing-medium $spacing-small;
     display: flex;
     align-items: center;
     @include content-text;
@@ -17,7 +17,7 @@
   &_icon {
     font-size: 16px;
     line-height: 21px;
-    margin-right: var(--spacing-medium);
+    margin-right: $spacing-medium;
     display: flex;
     align-self: flex-start;
     margin-top: 2px;
