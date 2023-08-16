@@ -1,17 +1,6 @@
 @import './global-css-settings';
 @import './content-spacing';
 
-// font
-$font-weight-normal: 400;
-$font-size-general-label: 14px;
-$font-line-height-general-label: 24px;
-$font-family: 'Figtree', 'Roboto', 'Rubik', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif;
-$title-font-family: 'Poppins', 'Roboto', 'Rubik', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif;
-
-$header-primary-font: $title-font-family;
-$text-primary-font: $font-family;
-$font-general-label: $font-weight-normal $font-size-general-label / $font-line-height-general-label $font-family;
-
 // sizes
 $h1-font-size: 40px;
 $h2-font-size: 28px;
@@ -28,7 +17,7 @@ $text-line-height: 24px;
 }
 
 @mixin content-text-without-color {
-  font-family: $text-primary-font;
+  font-family: var(--sb-font-family);
   font-size: $text-font-size;
   line-height: $text-line-height;
   font-weight: 400;
@@ -52,7 +41,7 @@ $text-line-height: 24px;
 
 @mixin title-appearance {
   margin-bottom: $spacing-between-title-to-content;
-  font-family: $header-primary-font;
+  font-family: var(--sb-title-font-family);
   @include basic-text;
   font-size: $h3-font-size;
   line-height: 28px;
@@ -62,7 +51,7 @@ $text-line-height: 24px;
 }
 
 @mixin font-link {
-  font: $font-general-label;
+  font: var(--sb-font-general-label);
   text-decoration: none;
   color: var(--sb-link-color);
 }

@@ -6,7 +6,7 @@
   margin-top: $spacing-between-sections;
   margin-bottom: $spacing-between-section-items;
   @include basic-text;
-  font-family: $header-primary-font;
+  font-family: var(--sb-title-font-family);
   font-weight: 500;
   font-size: $h2-font-size;
   line-height: 33px;
