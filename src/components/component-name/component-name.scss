@@ -14,7 +14,7 @@
   letter-spacing: -0.24px;
   text-align: left;
   display: grid;
-  border-radius: $border-radius-small;
+  border-radius: var(--sb-border-radius-small);
   padding: 40px 24px;
   background-repeat: no-repeat;
   background-size: cover;

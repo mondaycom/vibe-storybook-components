@@ -10,7 +10,7 @@
     border-radius: 4px;
 
     tbody {
-      border-radius: $border-radius-small;
+      border-radius: var(--sb-border-radius-small);
       overflow: hidden;
     }
 
@@ -21,10 +21,10 @@
 
       th {
         &:first-child {
-          border-top-left-radius: $border-radius-small;
+          border-top-left-radius: var(--sb-border-radius-small);
         }
         &:last-child {
-          border-top-right-radius: $border-radius-small;
+          border-top-right-radius: var(--sb-border-radius-small);
         }
       }
     }
