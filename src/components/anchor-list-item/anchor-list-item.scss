@@ -3,7 +3,7 @@
 .vibe-sb-comps-anchor-list-item {
   color: var(--sb-link-color);
   font-size: $anchor-font-size;
-  line-height: $text-line-height;
+  line-height: var(--sb-text-line-height);
 
   &:not(:last-child) {
     margin-bottom: var(--sb-spacing-small);

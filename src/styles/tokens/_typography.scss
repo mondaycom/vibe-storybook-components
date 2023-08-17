@@ -4,8 +4,12 @@ $font-line-height-general-label: 24px;
 
 // font
 :root {
+  // Font family
   --sb-font-family: 'Figtree', 'Roboto', 'Rubik', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif;
   --sb-title-font-family: 'Poppins', 'Roboto', 'Rubik', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif;
+  // Font definition
   --sb-font-general-label: $font-weight-normal $font-size-general-label / $font-line-height-general-label
     var(--sb-font-family);
+  // Line height
+  --sb-text-line-height: 24px;
 }
