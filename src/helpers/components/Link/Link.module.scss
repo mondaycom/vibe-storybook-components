@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   color: var(--sb-link-color);
-  @include font-link();
+  @include sb-font-link();
   text-decoration: none;
   writing-mode: horizontal-tb;
   @include sb-focus-style();

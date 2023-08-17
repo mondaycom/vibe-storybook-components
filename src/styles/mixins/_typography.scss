@@ -1,34 +1,34 @@
-@mixin basic-text {
+@mixin sb-basic-text {
   color: var(--sb-primary-text-color);
 }
 
-@mixin content-text-without-color {
+@mixin sb-content-text-without-color {
   font-family: var(--sb-font-family);
   font-size: var(--sb-text-font-size);
   line-height: var(--sb-text-line-height);
   font-weight: 400;
 }
 
-@mixin content-text {
-  @include content-text-without-color;
-  @include basic-text;
+@mixin sb-content-text {
+  @include sb-content-text-without-color;
+  @include sb-basic-text;
 }
 
-@mixin small-text-without-color {
+@mixin sb-small-text-without-color {
   font-size: var(--sb-small-text-font-size);
   font-weight: 400;
   line-height: var(--sb-text-line-height);
 }
 
-@mixin small-text {
-  @include basic-text;
-  @include small-text-without-color;
+@mixin sb-small-text {
+  @include sb-basic-text;
+  @include sb-small-text-without-color;
 }
 
-@mixin title-appearance {
+@mixin sb-title-appearance {
   margin-bottom: var(--sb-spacing-between-title-to-content);
   font-family: var(--sb-title-font-family);
-  @include basic-text;
+  @include sb-basic-text;
   font-size: var(--sb-h3-font-size);
   line-height: 28px;
   letter-spacing: -0.21px;
@@ -36,7 +36,7 @@
   font-weight: 300;
 }
 
-@mixin font-link {
+@mixin sb-font-link {
   font: var(--sb-font-general-label);
   text-decoration: none;
   color: var(--sb-link-color);

@@ -3,7 +3,7 @@
 .vibe-sb-comps-section-name {
   margin-top: var(--sb-spacing-between-sections);
   margin-bottom: var(--sb-spacing-between-section-items);
-  @include basic-text;
+  @include sb-basic-text;
   font-family: var(--sb-title-font-family);
   font-weight: 500;
   font-size: var(--sb-h2-font-size);

@@ -2,7 +2,7 @@
 
 .vibe-sb-comps-footer {
   &_text {
-    @include content-text;
+    @include sb-content-text;
   }
 
   &_link {

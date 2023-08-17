@@ -20,7 +20,7 @@
   &_text {
     display: flex;
     flex-direction: column;
-    @include content-text;
+    @include sb-content-text;
     color: var(--sb-secondary-text-color);
     &:not(:last-child) {
       margin-bottom: 24px;
@@ -28,7 +28,7 @@
   }
 
   &_title {
-    @include content-text;
+    @include sb-content-text;
     font-weight: 500;
     margin: 0;
     color: var(--sb-primary-text-color);

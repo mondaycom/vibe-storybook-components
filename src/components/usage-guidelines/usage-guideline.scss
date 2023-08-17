@@ -6,7 +6,7 @@
     margin: var(--sb-spacing-medium) var(--sb-spacing-small);
     display: flex;
     align-items: center;
-    @include content-text;
+    @include sb-content-text;
     &:first-child {
       margin-top: 0;
     }

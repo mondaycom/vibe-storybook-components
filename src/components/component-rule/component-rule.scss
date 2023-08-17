@@ -22,7 +22,7 @@
   }
 
   &_title {
-    @include content-text;
+    @include sb-content-text;
     margin-bottom: var(--sb-spacing-small);
     margin-top: var(--sb-spacing-medium);
     font-weight: 700;
@@ -39,7 +39,7 @@
   }
 
   &_description {
-    @include content-text;
+    @include sb-content-text;
     font-weight: 400;
   }
 

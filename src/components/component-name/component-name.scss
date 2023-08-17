@@ -4,7 +4,7 @@
   width: 100%;
   margin-top: 0;
   margin-bottom: var(--sb-spacing-between-section-items);
-  @include basic-text;
+  @include sb-basic-text;
   font-family: var(--sb-title-font-family);
   font-size: var(--sb-h1-font-size);
   line-height: 48px;
