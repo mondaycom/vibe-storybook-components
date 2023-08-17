@@ -8,7 +8,7 @@
   @include font-link();
   text-decoration: none;
   writing-mode: horizontal-tb;
-  @include focus-style();
+  @include sb-focus-style();
 }
 
 .link:hover .text {

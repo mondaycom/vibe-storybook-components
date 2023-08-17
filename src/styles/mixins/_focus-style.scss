@@ -1,7 +1,7 @@
-@mixin focus-style($focus-radius: 4px) {
+@mixin sb-focus-style($focus-radius: 4px) {
   &:focus-visible,
   &.focus-visible {
-    @include focus-style-css($focus-radius);
+    @include sb-focus-style-css($focus-radius);
   }
 
   &:focus:not(.focus-visible) {
@@ -9,15 +9,15 @@
   }
 }
 
-@mixin focus-style-css($focus-radius: 4px, $shadow-depth: 3px) {
-  @include focus-style-base($focus-radius);
+@mixin sb-focus-style-css($focus-radius: 4px, $shadow-depth: 3px) {
+  @include sb-focus-style-base($focus-radius);
 
   box-shadow:
     0 0 0 $shadow-depth hsl(209deg 100% 50% / 50%),
     0 0 0 1px var(--sb-primary-hover-color) inset;
 }
 
-@mixin focus-style-base($focus-radius: 4px) {
+@mixin sb-focus-style-base($focus-radius: 4px) {
   outline: none;
   z-index: 11;
   border-radius: $focus-radius;
