@@ -1,7 +1,7 @@
 @import "../../styles/global-css-settings";
 @import "../../styles/content-spacing";
 
-$related-components-grid-gap: var(--spacing-large);
+$related-components-grid-gap: var(--sb-spacing-large);
 $related-components-cell-min-width: $grid-auto-fit-cell-width-medium;
 $related-components-grid-cell-array-calc: calc(33.3% - #{$related-components-grid-gap});
 

@@ -9,6 +9,6 @@
     @include content-text-without-color;
   }
   &--with-spacing {
-    margin: 0 var(--spacing-xs);
+    margin: 0 var(--sb-spacing-xs);
   }
 }

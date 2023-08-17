@@ -5,8 +5,8 @@
   &_content {
     @include content-text-without-color;
     font-weight: bold;
-    margin-bottom: var(--spacing-xs);
-    margin-top: var(--spacing-xs);
+    margin-bottom: var(--sb-spacing-xs);
+    margin-top: var(--sb-spacing-xs);
     display: inline;
     &--link {
       cursor: pointer;
