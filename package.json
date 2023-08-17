@@ -15,7 +15,7 @@
   "exports": {
     ".": "./dist/index.js",
     "./index.css": "./dist/index.css",
-    "./tokens": "./dist/_tokens.scss",
+    "./mixins": "./dist/_mixins.scss",
     "./package.json": "./package.json",
     "./dist/": "./dist/"
   },
@@ -25,8 +25,8 @@
     "README.md"
   ],
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs && npm run copy-public-scsss-tokens",
-    "copy-public-scsss-tokens": "scripts/copy-public-scsss-tokens.sh",
+    "build": "rollup -c --bundleConfigAsCjs && npm run copy-mixins-to-dist",
+    "copy-mixins-to-dist": "scripts/copy-mixins-to-dist.sh",
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix",
     "prettier:fix": "prettier --write \"{,!(node_modules)/**/}*.{js,jsx,ts,tsx}\"",
