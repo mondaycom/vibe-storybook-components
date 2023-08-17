@@ -1,13 +1,13 @@
 @import '../../styles/mixins/grid-auto-fit';
 
 $component-rules-grid-gap: var(--sb-spacing-xxl);
-$component-rules-cell-min-width: $grid-auto-fit-cell-width-xl;
+$component-rules-cell-min-width: $sb-grid-auto-fit-cell-width-xl;
 $component-rules-grid-cell-array-calc: calc(50% - #{$component-rules-grid-gap});
 
 .vibe-sb-comps-component-rules {
   &_pair {
     margin-bottom: 80px;
-    @include grid-auto-fit(
+    @include sb-grid-auto-fit(
       $grid-gap: $component-rules-grid-gap,
       $grid-cell-min-width: $component-rules-cell-min-width,
       $grid-cell-array-calc: $component-rules-grid-cell-array-calc
