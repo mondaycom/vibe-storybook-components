@@ -1,5 +1,4 @@
 @import '../../styles/mixins/grid-auto-fit';
-@import '../../styles/content-spacing';
 
 $component-rules-grid-gap: var(--sb-spacing-xxl);
 $component-rules-cell-min-width: $grid-auto-fit-cell-width-xl;

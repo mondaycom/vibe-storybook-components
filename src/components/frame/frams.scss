@@ -1,10 +1,9 @@
-@import "../../styles/mixins";
-@import "../../styles/content-spacing";
+@import "../../styles/mixins/frame";
 
 .vibe-sb-comps-frame {
   @include frame;
   padding: 32px;
-  margin: $spacing-between-section-items 0;
+  margin: var(--sb-spacing-between-section-items) 0;
 
   &--no-border {
     border: 0;

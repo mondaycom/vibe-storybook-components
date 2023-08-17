@@ -1,5 +1,3 @@
-@import './content-spacing';
-
 // sizes
 $h1-font-size: 40px;
 $h2-font-size: 28px;
@@ -39,7 +37,7 @@ $text-line-height: 24px;
 }
 
 @mixin title-appearance {
-  margin-bottom: $spacing-between-title-to-content;
+  margin-bottom: var(--sb-spacing-between-title-to-content);
   font-family: var(--sb-title-font-family);
   @include basic-text;
   font-size: $h3-font-size;

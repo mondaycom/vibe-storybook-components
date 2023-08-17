@@ -1,9 +1,8 @@
 @import "../../styles/typography";
-@import "../../styles/content-spacing";
 
 .vibe-sb-comps-section-name {
-  margin-top: $spacing-between-sections;
-  margin-bottom: $spacing-between-section-items;
+  margin-top: var(--sb-spacing-between-sections);
+  margin-bottom: var(--sb-spacing-between-section-items);
   @include basic-text;
   font-family: var(--sb-title-font-family);
   font-weight: 500;
