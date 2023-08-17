@@ -18,7 +18,7 @@ import {
 } from '../src';
 import { ComponentNameDecorator } from '../storybook/components';
 import { DocsContainer, DocsPage, Unstyled } from '@storybook/blocks';
-import '../src/styles/tokens';
+import '../src/styles/tokens/index.scss';
 
 const preview: Preview = {
   parameters: {
