@@ -6,7 +6,7 @@
   margin-bottom: var(--sb-spacing-between-section-items);
   @include basic-text;
   font-family: var(--sb-title-font-family);
-  font-size: $h1-font-size;
+  font-size: var(--sb-h1-font-size);
   line-height: 48px;
   font-weight: 600;
   letter-spacing: -0.24px;

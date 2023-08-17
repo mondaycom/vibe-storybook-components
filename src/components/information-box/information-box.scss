@@ -9,6 +9,6 @@
 
   &_description {
     @include content-text;
-    font-size: $small-text-font-size;
+    font-size: var(--sb-small-text-font-size);
   }
 }

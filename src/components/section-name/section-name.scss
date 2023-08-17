@@ -6,7 +6,7 @@
   @include basic-text;
   font-family: var(--sb-title-font-family);
   font-weight: 500;
-  font-size: $h2-font-size;
+  font-size: var(--sb-h2-font-size);
   line-height: 33px;
   letter-spacing: -1px;
   text-align: left;
