@@ -1,5 +1,5 @@
-@import "../../styles/global-css-settings";
-@import "../../styles/content-spacing";
+@import '../../styles/mixins/index';
+@import '../../styles/content-spacing';
 
 $related-components-grid-gap: var(--sb-spacing-large);
 $related-components-cell-min-width: $grid-auto-fit-cell-width-medium;

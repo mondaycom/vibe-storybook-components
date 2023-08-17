@@ -1,5 +1,3 @@
-@import "./global-css-settings";
-
 @mixin frame() {
   border: var(--sb-layout-border-color) 1px solid;
   border-radius: var(--sb-border-radius-medium);
