@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   & > * {
-    margin-right: $spacing-medium;
+    margin-right: var(--spacing-medium);
   }
 }
 

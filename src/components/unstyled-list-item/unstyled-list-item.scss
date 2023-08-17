@@ -6,7 +6,7 @@
   line-height: $text-line-height;
 
   &:not(:last-child) {
-    margin-bottom: $spacing-small;
+    margin-bottom: var(--spacing-small);
   }
 
   a {

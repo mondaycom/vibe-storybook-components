@@ -1,7 +1,7 @@
 @import "../../styles/global-css-settings";
 @import "../../styles/content-spacing";
 
-$component-rules-grid-gap: $spacing-xxl;
+$component-rules-grid-gap: var(--spacing-xxl);
 $component-rules-cell-min-width: $grid-auto-fit-cell-width-xl;
 $component-rules-grid-cell-array-calc: calc(50% - #{$component-rules-grid-gap});
 

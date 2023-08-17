@@ -28,23 +28,23 @@
 
 .iconStart {
   line-height: 24px;
-  margin-right: $spacing-small;
+  margin-right: var(--spacing-small);
 }
 
 .iconEnd {
   line-height: 24px;
-  margin-left: $spacing-small;
+  margin-left: var(--spacing-small);
 }
 
 @supports (margin-inline-start: initial) {
   .iconStart {
     line-height: 24px;
     margin-right: 0;
-    margin-inline-end: $spacing-xs;
+    margin-inline-end: var(--spacing-xs);
   }
   .iconEnd {
     line-height: 24px;
     margin-left: 0;
-    margin-inline-start: $spacing-xs;
+    margin-inline-start: var(--spacing-xs);
   }
 }

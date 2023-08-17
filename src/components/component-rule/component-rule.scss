@@ -11,7 +11,7 @@
     border-radius: var(--sb-border-radius-medium);
     background: var(--sb-dark-background-on-secondary-color);
     & > * {
-      margin-right: $spacing-small;
+      margin-right: var(--spacing-small);
     }
 
     & > video {
@@ -24,8 +24,8 @@
 
   &_title {
     @include content-text;
-    margin-bottom: $spacing-small;
-    margin-top: $spacing-medium;
+    margin-bottom: var(--spacing-small);
+    margin-top: var(--spacing-medium);
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@
     width: 20px;
     height: 20px;
     border-radius: var(--sb-border-radius-small);
-    margin-right: $spacing-small-medium;
+    margin-right: var(--spacing-small)-medium;
     color: var(--sb-text-color-on-primary);
   }
 
