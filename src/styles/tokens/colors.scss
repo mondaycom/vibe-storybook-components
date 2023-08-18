@@ -16,6 +16,9 @@
   --sb-secondary-background-color: #ffffff;
   --sb-primary-hover-color: #0060b9;
   --sb-secondary-text-color: #676879;
+  --sb-primary-color: #0073ea;
+  --sb-primary-selected-color: #cce5ff;
+  --sb-negative-color-selected: #f4c3cb;
 }
 
 .dark-app-theme {
@@ -34,6 +37,9 @@
   --sb-secondary-background-color: #30324e;
   --sb-primary-hover-color: #0060b9;
   --sb-secondary-text-color: #9699a6;
+  --sb-primary-color: #0073ea;
+  --sb-primary-selected-color: #133774;
+  --sb-negative-color-selected: #642830;
 }
 
 .black-app-theme {
@@ -52,6 +58,9 @@
   --sb-secondary-background-color: #2c2c2c;
   --sb-primary-hover-color: #0060b9;
   --sb-secondary-text-color: #aaaaaa;
+  --sb-primary-color: #0073ea;
+  --sb-primary-selected-color: #133774;
+  --sb-negative-color-selected: #642830;
 }
 
 .hacker_theme-app-theme {
@@ -70,4 +79,7 @@
   --sb-secondary-background-color: #30324e;
   --sb-primary-hover-color: #fe5ab9;
   --sb-secondary-text-color: #9699a6;
+  --sb-primary-color: #fe78c6;
+  --sb-primary-selected-color: #9f4077;
+  --sb-negative-color-selected: #642830;
 }
