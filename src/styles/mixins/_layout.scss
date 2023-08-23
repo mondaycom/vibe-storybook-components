@@ -1,3 +1,9 @@
+@mixin sb-frame() {
+  border: var(--sb-layout-border-color) 1px solid;
+  border-radius: var(--sb-border-radius-medium);
+  border-color: var(--sb-layout-border-color);
+}
+
 // Grid auto fit
 // - This mixin defines a grid with auto fit repeat cells using min-max funtion.
 // -- This allows grid to accommodate container width without media queries.
