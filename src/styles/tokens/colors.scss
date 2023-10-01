@@ -23,6 +23,7 @@
   --sb-text-color-fixed-light: #ffffff;
   --sb-text-color-fixed-dark: #323338;
   --sb-inverted-color-background: #323338;
+  --sb-disabled-background-color: #ecedf5;
 }
 
 .dark-app-theme {
@@ -48,6 +49,7 @@
   --sb-text-color-fixed-light: #ffffff;
   --sb-text-color-fixed-dark: #323338;
   --sb-inverted-color-background: #ffffff;
+  --sb-disabled-background-color: #3c3f59;
 }
 
 .black-app-theme {
@@ -73,6 +75,7 @@
   --sb-text-color-fixed-light: #ffffff;
   --sb-text-color-fixed-dark: #323338;
   --sb-inverted-color-background: #eeeeee;
+  --sb-disabled-background-color: #3a3a3a;
 }
 
 .hacker_theme-app-theme {
@@ -98,4 +101,5 @@
   --sb-text-color-fixed-light: #ffffff;
   --sb-text-color-fixed-dark: #323338;
   --sb-inverted-color-background: #ffffff;
+  --sb-disabled-background-color: #3a3a3a;
 }
