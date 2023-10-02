@@ -23,7 +23,9 @@ import '../src/styles/tokens/index.scss';
 const preview: Preview = {
   parameters: {
     docs: {
-      inlineStories: true,
+      story: {
+        inline: true,
+      },
       container: ({ children, context }) => (
         <DocsContainer context={context}>
           <Unstyled>
