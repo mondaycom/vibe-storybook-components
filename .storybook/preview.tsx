@@ -6,7 +6,7 @@ import {
   Frame,
   FunctionArgument,
   FunctionArguments,
-  LinkComponent,
+  Link,
   Paragraph,
   RelatedComponent,
   RelatedComponents,
@@ -26,7 +26,7 @@ const preview: Preview = {
       story: {
         inline: true,
       },
-      container: ({ children, context }) => (
+      container: ({ children, context }: { children: any; context: any }) => (
         <DocsContainer context={context}>
           <Unstyled>
             {children}
@@ -41,9 +41,10 @@ const preview: Preview = {
         h2: SectionName,
         h3: Title,
         li: AnchorListItem,
-        a: LinkComponent,
+        a: Link,
         p: Paragraph,
         SectionName,
+        Link,
         ComponentRules,
         UsageGuidelines,
         FunctionArguments,
