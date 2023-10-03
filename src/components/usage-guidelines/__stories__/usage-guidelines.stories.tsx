@@ -1,11 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import UsageGuidelines from './usage-guidelines';
+import UsageGuidelines from '../usage-guidelines';
+import Link from '../../link/link';
+import React from 'react';
 
 const meta: Meta<typeof UsageGuidelines> = {
   component: UsageGuidelines,
   title: 'Components/UsageGuidelines',
 };
-
 export default meta;
 
 type Story = StoryObj<typeof UsageGuidelines>;
@@ -13,8 +14,13 @@ type Story = StoryObj<typeof UsageGuidelines>;
 export const Overview: Story = {
   args: {
     guidelines: [
-      'There is no unique syntax for creating a UsageGuideline component in MDX files. Therefore, use the component as you would in a regular JSX file.',
-      'Write down between three and five guidelines (technical or “copy”).',
+      'Usage guideline #1',
+      <>
+        <b>Usage guideline #2 - with JSX element</b>
+      </>,
+      <>
+        Usage guideline #3 -<Link href="/?path=/docs/welcome--docs">with link</Link>
+      </>,
     ],
   },
 };
