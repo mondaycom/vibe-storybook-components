@@ -56,16 +56,18 @@ export function createStoryMetaSettings({
 }) {
   const argTypes = {};
   const decorators = [];
-  const allowedIcons = iconsMetaData.reduce(
-    (acc, icon) => {
-      const Component = allIconsComponents[icon.file.split('.')[0]];
-      acc.options.push(icon.name);
-      acc.mapping[icon.name] = Component;
+  const allowedIcons =
+    iconsMetaData &&
+    iconsMetaData.reduce(
+      (acc, icon) => {
+        const Component = allIconsComponents[icon.file.split('.')[0]];
+        acc.options.push(icon.name);
+        acc.mapping[icon.name] = Component;
 
-      return acc;
-    },
-    { options: [], mapping: {} },
-  );
+        return acc;
+      },
+      { options: [], mapping: {} },
+    );
 
   // set enum allowed values inside argsTypes object
   enumPropNamesArray?.forEach(prop => {
@@ -116,6 +118,8 @@ export function createStoryMetaSettings({
     }
   });
 
+  console.log('### ignoreControlsPropNamesArray', ignoreControlsPropNamesArray);
+  console.log('### argTypes before', argTypes);
   ignoreControlsPropNamesArray?.forEach(propName => {
     if (argTypes[propName] instanceof Object) {
       argTypes[propName] = { ...argTypes[propName], control: false };
@@ -123,6 +127,7 @@ export function createStoryMetaSettings({
       argTypes[propName] = { control: false };
     }
   });
+  console.log('### argTypes after', argTypes);
 
   return { argTypes, decorators };
 }
