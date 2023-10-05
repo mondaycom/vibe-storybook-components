@@ -109,7 +109,7 @@ export function createStoryMetaSettings({
 
   actionPropsArray?.forEach(actionProp => {
     if (typeof actionProp === 'string') {
-      argTypes[actionProp] = { action: actionProp };
+      argTypes[actionProp] = { action: actionProp, control: false };
     } else if (actionProp?.name && actionProp.linkedToPropValue) {
       // we assume that actionPropsArray is static. If it changes, things may break, since internally we call React.useState for the story decorator.
       decorators.push(createMappedActionToInputPropDecorator(actionProp.name, actionProp.linkedToPropValue));
