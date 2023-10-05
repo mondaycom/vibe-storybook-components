@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Tip from '../tip';
 import Flex from '../../../helpers/components/Flex/Flex';
+import Link from '../../../helpers/components/Link/Link';
 
 const meta: Meta<typeof Tip> = {
   component: Tip,
@@ -12,7 +13,12 @@ type Story = StoryObj<typeof Tip>;
 
 export const Overview: Story = {
   args: {
-    children: 'This tip shows some helpful information.',
+    children: (
+      <>
+        This tip shows some helpful information. It can also show <Link text="links" href="#" inlineText /> to more
+        information
+      </>
+    ),
   },
 };
 
