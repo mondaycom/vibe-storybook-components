@@ -118,8 +118,7 @@ export function createStoryMetaSettings({
     }
   });
 
-  console.log('### ignoreControlsPropNamesArray', ignoreControlsPropNamesArray);
-  console.log('### argTypes before', argTypes);
+  // Disable controls for specific props
   ignoreControlsPropNamesArray?.forEach(propName => {
     if (argTypes[propName] instanceof Object) {
       argTypes[propName] = { ...argTypes[propName], control: false };
@@ -127,7 +126,6 @@ export function createStoryMetaSettings({
       argTypes[propName] = { control: false };
     }
   });
-  console.log('### argTypes after', argTypes);
 
   return { argTypes, decorators };
 }
