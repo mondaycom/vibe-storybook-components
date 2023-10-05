@@ -116,6 +116,17 @@ export function createStoryMetaSettings({
     }
   });
 
+  // If prop type is ElementContent, set text control, otherwise it's displaying as object
+  const componentProps = component?.__docgenInfo?.props;
+  if (componentProps) {
+    Object.keys(componentProps)?.forEach(propName => {
+      const prop = componentProps[propName];
+      if (prop?.type?.name === 'ElementContent') {
+        argTypes[propName] = { control: { type: 'text' } };
+      }
+    });
+  }
+
   // Disable controls for specific props
   ignoreControlsPropNamesArray?.forEach(propName => {
     if (argTypes[propName] instanceof Object) {
