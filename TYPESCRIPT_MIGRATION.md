@@ -31,3 +31,4 @@ const Tip: React.FC<TipProps> & { types?: typeof TipTypes };
 ### Props
 
 1. Please set the default props of the component to be part of the component signature and delete the component `propsTypes` and `defaultProps`.
+2. If one of the props e.g. `children` should be either string, either react node(s), consider using `ElementContent` type.
