@@ -2,6 +2,7 @@ import cx from 'classnames';
 import styles from './tip.module.scss';
 import React from 'react';
 import Flex from '../../helpers/components/Flex/Flex';
+import { ElementContent } from '../../types';
 
 export enum TipTypes {
   PRIMARY = 'primary',
@@ -12,7 +13,7 @@ export enum TipTypes {
 }
 
 export interface TipProps {
-  children: React.ReactNode | string;
+  children: ElementContent;
   title?: string;
   type?: TipTypes;
   emoji?: string;
