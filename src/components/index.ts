@@ -16,7 +16,9 @@ import { RelatedComponent } from './related-component/related-component';
 import { RelatedComponents } from './related-components/related-components';
 import { SectionName } from './section-name/section-name';
 import { StoryDescription } from './story-description/story-description';
-// import { Tip } from "./tip/tip"; // uses attention box - not exported for now
+import { Tip } from './tip/tip';
+import { AlphaWarning } from './alpha-warning/alpha-warning';
+import { DeprecatedWarning } from './deprecated-warning/deprecated-warning';
 import { Title } from './title/title';
 import { TokenTable } from './token-table/token-table';
 import { UnstyledList } from './unstyled-list/unstyled-list';
@@ -26,9 +28,11 @@ import { VisualDescription } from './visual-description/visual-description';
 
 export {
   AnchorListItem,
+  AlphaWarning,
   ColorDescription,
   ComponentName,
   ComponentRules,
+  DeprecatedWarning,
   DocFooter,
   Frame,
   FunctionArgument,
@@ -43,7 +47,7 @@ export {
   RelatedComponents,
   SectionName,
   StoryDescription,
-  // Tip, // uses attention box - not exported for now
+  Tip,
   Title,
   TokenTable,
   UnstyledList,

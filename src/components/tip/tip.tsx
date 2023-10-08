@@ -18,7 +18,7 @@ export interface TipProps {
   emoji?: string;
 }
 
-const Tip: React.FC<TipProps> & {
+export const Tip: React.FC<TipProps> & {
   types?: typeof TipTypes;
 } = ({ title = 'Tip', children, emoji = '🤓', type = TipTypes.DARK }) => {
   return (
