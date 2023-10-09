@@ -1,57 +1,29 @@
-import { default as AnchorListItem } from './anchor-list-item/anchor-list-item';
-import { default as ColorDescription } from './color-description/color-description';
-import { default as ComponentName } from './component-name/component-name';
-import { default as ComponentRules } from './component-rules/component-rules';
-import { default as DocFooter } from './doc-footer/doc-footer';
-import { default as Frame } from './frame/frame';
-import { default as FunctionArgument } from './function-arguments/function-argument';
-import { default as FunctionArguments } from './function-arguments/function-arguments';
-import { default as InformationBox } from './information-box/information-box';
-import { default as InformationBoxTitle } from './information-box-title/information-box-title';
-import { default as Link } from './link/link';
-import { default as LinkComponent } from './link-component/link-component';
-import { default as MultipleStoryElementsWrapper } from './multiple-story-elements-wrapper/multiple-story-elements-wrapper';
-import { default as Paragraph } from './paragraph/paragraph';
-import { default as RelatedComponent } from './related-component/related-component';
-import { default as RelatedComponents } from './related-components/related-components';
-import { default as SectionName } from './section-name/section-name';
-import { default as StoryDescription } from './story-description/story-description';
-import { default as Tip } from './tip/tip';
-import { default as AlphaWarning } from './alpha-warning/alpha-warning';
-import { default as DeprecatedWarning } from './deprecated-warning/deprecated-warning';
-import { default as Title } from './title/title';
-import { default as TokenTable } from './token-table/token-table';
-import { default as UnstyledList } from './unstyled-list/unstyled-list';
-import { default as UnstyledListItem } from './unstyled-list-item/unstyled-list-item';
-import { default as UsageGuidelines } from './usage-guidelines/usage-guidelines';
-import { default as VisualDescription } from './visual-description/visual-description';
-
-export {
-  AnchorListItem,
-  AlphaWarning,
-  ColorDescription,
-  ComponentName,
-  ComponentRules,
-  DeprecatedWarning,
-  DocFooter,
-  Frame,
-  FunctionArgument,
-  FunctionArguments,
-  InformationBox,
-  InformationBoxTitle,
-  Link,
-  LinkComponent,
-  MultipleStoryElementsWrapper,
-  Paragraph,
-  RelatedComponent,
-  RelatedComponents,
-  SectionName,
-  StoryDescription,
-  Tip,
-  Title,
-  TokenTable,
-  UnstyledList,
-  UnstyledListItem,
-  UsageGuidelines,
-  VisualDescription,
-};
+export { default as AlphaWarning } from './alpha-warning/alpha-warning';
+export { default as AnchorListItem } from './anchor-list-item/anchor-list-item';
+export { default as ColorDescription } from './color-description/color-description';
+export { default as ComponentDescription } from './component-description/component-description';
+export { default as ComponentName } from './component-name/component-name';
+export { default as ComponentRules } from './component-rules/component-rules';
+export { default as DeprecatedWarning } from './deprecated-warning/deprecated-warning';
+export { default as DocFooter } from './doc-footer/doc-footer';
+export { default as Frame } from './frame/frame';
+export { default as FunctionArgument } from './function-arguments/function-argument';
+export { default as FunctionArguments } from './function-arguments/function-arguments';
+export { default as InformationBox } from './information-box/information-box';
+export { default as InformationBoxTitle } from './information-box-title/information-box-title';
+export { default as Link } from './link/link';
+export { default as LinkComponent } from './link-component/link-component';
+export { default as MultipleStoryElementsWrapper } from './multiple-story-elements-wrapper/multiple-story-elements-wrapper';
+export { default as Paragraph } from './paragraph/paragraph';
+export { default as RelatedComponent } from './related-component/related-component';
+export { default as RelatedComponents } from './related-components/related-components';
+export { default as SectionName } from './section-name/section-name';
+export { default as StatusTag } from './status-tag/status-tag';
+export { default as StoryDescription } from './story-description/story-description';
+export { default as Tip } from './tip/tip';
+export { default as Title } from './title/title';
+export { default as TokenTable } from './token-table/token-table';
+export { default as UnstyledList } from './unstyled-list/unstyled-list';
+export { default as UnstyledListItem } from './unstyled-list-item/unstyled-list-item';
+export { default as UsageGuidelines } from './usage-guidelines/usage-guidelines';
+export { default as VisualDescription } from './visual-description/visual-description';
