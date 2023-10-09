@@ -1,7 +1,9 @@
 import cx from 'classnames';
-import styles from './tip.module.scss';
 import React from 'react';
 import Flex from '../../helpers/components/Flex/Flex';
+import { ElementContent } from '../../types';
+import { withStaticProps } from '../../types/withStaticProps';
+import styles from './tip.module.scss';
 
 export enum TipTypes {
   PRIMARY = 'primary',
@@ -12,7 +14,7 @@ export enum TipTypes {
 }
 
 export interface TipProps {
-  children: React.ReactNode | string;
+  children: ElementContent;
   title?: string;
   type?: TipTypes;
   emoji?: string;
@@ -24,7 +26,7 @@ export const Tip: React.FC<TipProps> & {
   return (
     <div className={cx(styles.tip, styles[type])}>
       <div className={styles.title}>
-        <Flex gap={Flex.gaps?.XS} align={Flex.align?.CENTER}>
+        <Flex gap={Flex.gaps.XS} align={Flex.align.CENTER}>
           <span>{emoji}</span>
           <span>{title}</span>
         </Flex>
@@ -34,8 +36,6 @@ export const Tip: React.FC<TipProps> & {
   );
 };
 
-Object.assign(Tip, {
+export default withStaticProps(Tip, {
   types: TipTypes,
 });
-
-export default Tip;
