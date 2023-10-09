@@ -15,8 +15,14 @@ To migrate your component to CSS modules, you'll need to:
 import styles from "YourStyleFile.module.scss"
 ```
 
+- Use `classnames` package if you need to combine multiple classes:
+
+```
+import cx from "classnames";
+```
+
 - Use your styles object like so:
 
 ```
-<Component className={styles.componentClass}/>
+<Component className={cx(styles.componentClass, styles.anotherComponentClass)}/>
 ```
