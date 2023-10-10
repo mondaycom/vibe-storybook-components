@@ -4,7 +4,12 @@ import { type StatusTagType } from '../status-tag/status-tag';
 import Flex from '../../../src/helpers/components/Flex/Flex';
 import { ElementContent } from '../../types';
 
-const SidebarItem: React.FC<{ children: ElementContent; status: StatusTagType }> = ({ children, status }) => {
+interface SidebarItemProps {
+  children: ElementContent;
+  status: StatusTagType;
+}
+
+const SidebarItem: React.FC<SidebarItemProps> = ({ children, status }) => {
   return (
     <Flex justify={Flex.justify.SPACE_BETWEEN} gap={Flex.gaps.MEDIUM}>
       {children}
