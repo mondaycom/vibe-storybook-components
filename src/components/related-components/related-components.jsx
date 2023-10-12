@@ -8,11 +8,7 @@ const RelatedComponents = ({ componentsNames, descriptionComponentsMap }) => {
       componentsNames.map((componentName, index) => {
         const key = `${componentName}_${index}`;
 
-        return (
-          <section key={key}>
-            {descriptionComponentsMap.get(componentName)}
-          </section>
-        );
+        return <section key={key}>{descriptionComponentsMap.get(componentName)}</section>;
       }),
     [componentsNames, descriptionComponentsMap],
   );
