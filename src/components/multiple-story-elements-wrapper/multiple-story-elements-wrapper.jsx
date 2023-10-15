@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import styles from './multiple-story-elements-wrapper.scss';
+import styles from './multiple-story-elements-wrapper.module.scss';
 
 const MultipleStoryElementsWrapper = ({ className, children }) => (
   <div className={cx(styles.multipleStoryElementsWrapper, className)}>

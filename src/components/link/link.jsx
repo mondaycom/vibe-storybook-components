@@ -2,7 +2,7 @@ import React from 'react';
 import cx from 'classnames';
 import PropTypes from 'prop-types';
 import CoreLink from '../../helpers/components/Link/Link';
-import styles from './link.scss';
+import styles from './link.module.scss';
 
 const Link = ({ children, href, size, withoutSpacing, className }) => (
   <CoreLink
