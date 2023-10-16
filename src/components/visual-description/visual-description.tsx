@@ -6,7 +6,7 @@ interface VisualDescriptionProps {
   title: string;
   ariaLabel: string;
   children: React.ReactNode;
-  description: React.ReactNode;
+  description: string;
   code?: string;
   className?: string;
   visualDescriptionClassName?: string;

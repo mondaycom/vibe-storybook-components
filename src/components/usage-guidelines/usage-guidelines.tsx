@@ -3,7 +3,7 @@ import styles from './usage-guidelines.module.scss';
 import { ElementContent } from '../../types';
 
 interface UsageGuidelinesProps {
-  guidelines: Array<string | ElementContent>;
+  guidelines: Array<ElementContent>;
 }
 
 const UsageGuidelines: React.FC<UsageGuidelinesProps> = ({ guidelines = [] }) => {
