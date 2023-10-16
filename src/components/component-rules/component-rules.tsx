@@ -3,6 +3,7 @@ import cx from 'classnames';
 import { BEMClass } from '../../helpers/utils/bem-helper';
 import ComponentRule from '../component-rule/component-rule';
 import './component-rules.scss';
+import { ElementContent } from '../../types/ElementContent';
 
 const CSS_BASE_CLASS = 'vibe-sb-comps-component-rules';
 const bemHelper = BEMClass(CSS_BASE_CLASS);
@@ -10,12 +11,12 @@ const bemHelper = BEMClass(CSS_BASE_CLASS);
 interface ComponentRulesProps {
   rules: {
     positive?: {
-      component: React.ReactElement;
-      description: string | React.ReactElement;
+      component: ElementContent;
+      description: string | ElementContent;
     };
     negative?: {
-      component: React.ReactElement;
-      description: string | React.ReactElement;
+      component: ElementContent;
+      description: string | ElementContent;
     };
     className?: string;
     componentContainerClassName?: string;

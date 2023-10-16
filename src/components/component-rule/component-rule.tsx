@@ -5,12 +5,13 @@ import CloseSmall from '../../helpers/components/Icons/CloseSmall';
 import { BEMClass } from '../../helpers/utils/bem-helper';
 import { RECOMMENDED_TITLE, NOT_RECOMMENDED_TITLE, COMPONENT_RULE_BASE_CSS_CLASS } from './component-rule-constants';
 import './component-rule.scss';
+import { ElementContent } from '../../types/ElementContent';
 
 const bemHelper = BEMClass(COMPONENT_RULE_BASE_CSS_CLASS);
 
 interface ComponentRuleProps {
-  component: React.ReactElement;
-  description: string | React.ReactElement;
+  component: ElementContent;
+  description: string | ElementContent;
   isRecommended: boolean;
   className?: string;
   componentContainerClassName?: string;
