@@ -1,12 +1,16 @@
 import React, { useMemo } from 'react';
-import PropTypes from 'prop-types';
 import { BEMClass } from '../../helpers/utils/bem-helper';
 import './usage-guidelines.scss';
+import { ElementContent } from '../../types';
 
 const CSS_BASE_CLASS = 'vibe-sb-comps-usage-guidelines';
 const bemHelper = BEMClass(CSS_BASE_CLASS);
 
-const UsageGuidelines = ({ guidelines }) => {
+interface UsageGuidelinesProps {
+  guidelines: Array<string | ElementContent>;
+}
+
+const UsageGuidelines: React.FC<UsageGuidelinesProps> = ({ guidelines = [] }) => {
   const guidelinesElements = useMemo(
     () =>
       guidelines.map((guideline, index) => (
@@ -20,14 +24,6 @@ const UsageGuidelines = ({ guidelines }) => {
   );
 
   return <article className={CSS_BASE_CLASS}>{guidelinesElements}</article>;
-};
-
-UsageGuidelines.propTypes = {
-  guidelines: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.element])),
-};
-
-UsageGuidelines.defaultProps = {
-  guidelines: [],
 };
 
 export default UsageGuidelines;

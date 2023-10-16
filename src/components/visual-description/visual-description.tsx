@@ -2,7 +2,17 @@ import React from 'react';
 import cx from 'classnames';
 import './visual-description.scss';
 
-const VisualDescription = ({
+interface VisualDescriptionProps {
+  title: string;
+  ariaLabel: string;
+  children: React.ReactNode;
+  description: React.ReactNode;
+  code?: string;
+  className?: string;
+  visualDescriptionClassName?: string;
+}
+
+const VisualDescription: React.FC<VisualDescriptionProps> = ({
   title,
   ariaLabel,
   children,
