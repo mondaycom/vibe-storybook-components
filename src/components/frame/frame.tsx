@@ -1,9 +1,10 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import cx from 'classnames';
 import styles from './frame.module.scss';
+import { ElementContent } from '../../types';
 
 type FrameProps = {
-  children: ReactNode;
+  children: ElementContent;
   className: string;
   noGutter: boolean;
   noBorder: boolean;
