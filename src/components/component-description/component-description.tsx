@@ -1,8 +1,9 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
+import { ElementContent } from '../../types';
 
 type ComponentDescriptionProps = {
   description?: string;
-  children?: ReactNode;
+  children?: ElementContent;
 };
 
 const ComponentDescription: FC<ComponentDescriptionProps> = ({ description = '', children = null }) => (

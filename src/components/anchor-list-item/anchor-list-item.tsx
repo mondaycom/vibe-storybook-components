@@ -1,8 +1,9 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import './anchor-list-item.scss';
+import { ElementContent } from '../../types';
 
 type AnchorListItemProps = {
-  children?: ReactNode;
+  children?: ElementContent;
 };
 
 const AnchorListItem: FC<AnchorListItemProps> = ({ children = null }) => (
