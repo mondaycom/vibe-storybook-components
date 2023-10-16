@@ -5,7 +5,7 @@ import CloseSmall from '../../helpers/components/Icons/CloseSmall';
 import { BEMClass } from '../../helpers/utils/bem-helper';
 import { RECOMMENDED_TITLE, NOT_RECOMMENDED_TITLE, COMPONENT_RULE_BASE_CSS_CLASS } from './component-rule-constants';
 import './component-rule.scss';
-import { ElementContent } from '../../types/ElementContent';
+import { ElementContent } from '../../types';
 
 const bemHelper = BEMClass(COMPONENT_RULE_BASE_CSS_CLASS);
 

@@ -3,7 +3,7 @@ import cx from 'classnames';
 import { BEMClass } from '../../helpers/utils/bem-helper';
 import ComponentRule from '../component-rule/component-rule';
 import './component-rules.scss';
-import { ElementContent } from '../../types/ElementContent';
+import { ElementContent } from '../../types';
 
 const CSS_BASE_CLASS = 'vibe-sb-comps-component-rules';
 const bemHelper = BEMClass(CSS_BASE_CLASS);
