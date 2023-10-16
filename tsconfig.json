@@ -3,7 +3,7 @@
   "compilerOptions": {
     "rootDir": "./src",
     "lib": ["esnext", "dom"],
-    "allowJs": true,
+    "allowJs": false,
     "target": "es6",
     "module": "ESNext",
     "sourceMap": false,
