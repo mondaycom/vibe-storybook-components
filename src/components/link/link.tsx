@@ -5,7 +5,7 @@ import styles from './link.module.scss';
 import { Size } from './LinkConstants';
 
 type LinkProps = {
-  className: string;
+  className?: string;
   children: string;
   href: string;
   size?: Size;
