@@ -12,7 +12,7 @@ type LinkProps = {
   withoutSpacing?: boolean;
 };
 
-const Link: FC<LinkProps> = ({ children, href, size = Size.MEDIUM, withoutSpacing = false, className }) => (
+const Link: FC<LinkProps> & { sizes?: typeof Size } = ({ children, href, size = Size.MEDIUM, withoutSpacing = false, className }) => (
   <CoreLink
     text={children}
     href={href}
