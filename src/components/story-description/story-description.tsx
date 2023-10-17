@@ -1,42 +1,56 @@
-import React, { FC, useMemo } from 'react';
+import { FC, useMemo } from 'react';
 import cx from 'classnames';
 import styles from './story-description.module.scss';
-import { ElementContent } from '../../types';
+import { ElementContent, withStaticProps } from '../../types';
 import { FlexAlign, FlexDirection, FlexGap, FlexJustify } from 'src/helpers/components/Flex/FlexConstants';
 import Flex from 'src/helpers/components/Flex/Flex';
 
 type StoryDescriptionProps = {
   align?: FlexAlign;
-  description?: string | ElementContent;
+  description?: ElementContent;
   children: ElementContent;
   className: string;
   headerAlign?: FlexAlign;
   headerJustify?: FlexJustify;
-  headerStyle: Record<string, unknown>;
+  headerStyle: React.CSSProperties;
   justify?: FlexJustify;
   vertical?: boolean;
 };
 
-const StoryDescription: FC<StoryDescriptionProps> = ({
+const StoryDescription: FC<StoryDescriptionProps> & {
+  justify?: typeof FlexJustify;
+  align?: typeof FlexAlign;
+  gaps?: typeof FlexGap;
+  directions?: typeof FlexDirection;
+} = ({
   description = '',
   headerStyle,
   children,
   vertical = false,
   className,
   align,
-  justify = FlexJustify.START,
+  justify = StoryDescription.justify?.START,
   headerAlign,
   headerJustify,
 }) => {
-  const direction = useMemo(() => (vertical ? FlexDirection.COLUMN : FlexDirection.ROW), [vertical]);
+  const direction = useMemo(
+    () => (vertical ? StoryDescription.directions?.COLUMN : StoryDescription.directions?.ROW),
+    [vertical],
+  );
 
   return (
-    <Flex direction={direction} gap={FlexGap.MEDIUM} justify={justify} align={align || undefined} className={className}>
+    <Flex
+      direction={direction}
+      gap={StoryDescription.gaps?.MEDIUM}
+      justify={justify}
+      align={align || undefined}
+      className={className}
+    >
       <Flex
         className={cx(styles.description, { [styles.vertical]: vertical })}
         style={{ width: '120px', ...headerStyle }}
         justify={headerJustify}
-        align={headerAlign || FlexAlign.CENTER}
+        align={headerAlign || StoryDescription.align?.CENTER}
       >
         {description}
       </Flex>
@@ -45,4 +59,9 @@ const StoryDescription: FC<StoryDescriptionProps> = ({
   );
 };
 
-export default StoryDescription;
+export default withStaticProps(StoryDescription, {
+  justify: FlexJustify,
+  align: FlexAlign,
+  gaps: FlexGap,
+  directions: FlexDirection,
+});
