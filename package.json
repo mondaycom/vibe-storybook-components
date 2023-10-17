@@ -93,7 +93,6 @@
     "jest-environment-jsdom": "^29.6.2",
     "mini-css-extract-plugin": "^2.6.0",
     "mocha": "^10.2.0",
-    "monday-ui-style": "^0.1.196",
     "postcss": "^8.4.27",
     "postcss-loader": "^7.3.3",
     "prettier": "^3.0.0",

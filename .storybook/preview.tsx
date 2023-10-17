@@ -21,7 +21,6 @@ import { ComponentNameDecorator } from '../storybook/components';
 import { DocsContainer, DocsPage, Unstyled } from '@storybook/blocks';
 import { withThemeByClassName } from '@storybook/addon-themes';
 import '../src/styles/tokens/index.scss';
-import 'monday-ui-style/dist/index.min.css';
 
 const preview: Preview = {
   parameters: {
