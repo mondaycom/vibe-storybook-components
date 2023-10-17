@@ -5,7 +5,7 @@ $component-rules-cell-min-width: $sb-grid-auto-fit-cell-width-xl;
 $component-rules-grid-cell-array-calc: calc(50% - #{$component-rules-grid-gap});
 
 .componentRules {
-  &.pair {
+  .pair {
     margin-bottom: 80px;
     @include sb-grid-auto-fit(
       $grid-gap: $component-rules-grid-gap,
