@@ -1,4 +1,4 @@
-import { ArgTypes, DecoratorFunction } from '@storybook/types';
+import { ArgTypes, PartialStoryFn, StoryContext } from '@storybook/types';
 
 export type EnumPropNames = {
   propName: string;
@@ -21,7 +21,7 @@ export type AllowedIcons = {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type Decorator = DecoratorFunction<any>[];
+export type Decorator = (story: PartialStoryFn<any>, context: StoryContext<any>) => { storyResult: any };
 
 export type StoryMetaSettingsArgs = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
