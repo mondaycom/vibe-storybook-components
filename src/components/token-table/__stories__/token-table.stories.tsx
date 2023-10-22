@@ -11,7 +11,7 @@ type Story = StoryObj<typeof TokenTable>;
 
 export const Overview: Story = {
   args: {
-    theadData: ['Column A', 'Column B'],
+    theadData: ['Token', 'Value'],
     tbodyData: [
       { id: '1', items: ['--token-1', '#111'] },
       { id: '2', items: ['--token-2', '#222'] },
