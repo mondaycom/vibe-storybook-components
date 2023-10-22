@@ -1,4 +1,4 @@
-import { ArgTypes, DecoratorFunction, StoryContext } from '@storybook/types';
+import { ArgTypes, DecoratorFunction } from '@storybook/types';
 import { ReactRenderer } from '@storybook/react';
 
 export type EnumPropNames = {
@@ -27,7 +27,7 @@ export type StoryMetaSettingsArgs = {
   ignoreControlsPropNamesArray?: string[];
 };
 
-export type Decorator = DecoratorFunction<ReactRenderer> | ((Story: () => unknown, context: StoryContext) => Decorator);
+export type Decorator = DecoratorFunction<ReactRenderer>;
 
 export type StoryMetaSettingsResult = {
   argTypes: Partial<ArgTypes>;

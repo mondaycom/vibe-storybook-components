@@ -26,11 +26,8 @@ function parseStringForEnum(componentName: string, enumName: string, enumKey: st
  * @param {string} linkedToPropValue - the name of the prop which should be updated when the prop of "actionName" is called. For example, "value".
  * @returns A decorate for storybook which updates the {@link linkedToPropValue} input of the component, whenever {@link actionName} is called.
  */
-function createMappedActionToInputPropDecorator(
-  actionName: string,
-  linkedToPropValue: string,
-): (Story: () => unknown, context: StoryContext) => Decorator {
-  return (Story: () => unknown, context: StoryContext): Decorator => {
+function createMappedActionToInputPropDecorator(actionName: string, linkedToPropValue: string): Decorator {
+  const decorator = (Story: () => unknown, context: StoryContext) => {
     const [propValue, setPropValue] = useState(context.initialArgs[linkedToPropValue]);
     const createAction = useMemo(() => action(actionName), []);
 
@@ -45,8 +42,9 @@ function createMappedActionToInputPropDecorator(
     context.args[actionName] = injectedCallback;
     context.args[linkedToPropValue] = propValue;
 
-    return Story() as Decorator;
+    return Story();
   };
+  return decorator as Decorator;
 }
 
 export function createStoryMetaSettings({
