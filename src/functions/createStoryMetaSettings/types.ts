@@ -16,6 +16,13 @@ export type IconMetaData = {
   name: string;
 };
 
+export type AllowedIcons = {
+  options: string[];
+  mapping: { [key: string]: unknown };
+};
+
+export type Decorator = DecoratorFunction<ReactRenderer>;
+
 export type StoryMetaSettingsArgs = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   component: any;
@@ -27,14 +34,7 @@ export type StoryMetaSettingsArgs = {
   ignoreControlsPropNamesArray?: string[];
 };
 
-export type Decorator = DecoratorFunction<ReactRenderer>;
-
 export type StoryMetaSettingsResult = {
   argTypes: Partial<ArgTypes>;
   decorators: Decorator[];
-};
-
-export type AllowedIcons = {
-  options: string[];
-  mapping: { [key: string]: unknown };
 };
