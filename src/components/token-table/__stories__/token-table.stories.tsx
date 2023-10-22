@@ -13,8 +13,8 @@ export const Overview: Story = {
   args: {
     theadData: ['Column A', 'Column B'],
     tbodyData: [
-      { id: '1', items: ['value 1', 'value 3'] },
-      { id: '2', items: ['value 2', 'value 4'] },
+      { id: '1', items: ['--token-1', '#111'] },
+      { id: '2', items: ['--token-2', '#222'] },
     ],
   },
 };
