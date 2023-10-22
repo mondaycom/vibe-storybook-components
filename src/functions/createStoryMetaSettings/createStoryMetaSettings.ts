@@ -44,7 +44,7 @@ function createMappedActionToInputPropDecorator(actionName: string, linkedToProp
 
     return Story();
   };
-  return decorator as Decorator;
+  return decorator as unknown as Decorator;
 }
 
 export function createStoryMetaSettings({
