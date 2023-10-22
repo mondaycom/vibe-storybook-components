@@ -3,7 +3,7 @@ import cx from 'classnames';
 import CoreLink from '../../helpers/components/Link/Link';
 import styles from './link.module.scss';
 import { LinkSize } from './LinkConstants';
-import { withStaticProps } from 'src/types';
+import { withStaticProps } from '../../types';
 
 type LinkProps = {
   className?: string;
