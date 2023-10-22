@@ -20,7 +20,8 @@ export type AllowedIcons = {
   mapping: { [key: string]: unknown };
 };
 
-export type Decorator = DecoratorFunction<never>[];
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type Decorator = DecoratorFunction<any>[];
 
 export type StoryMetaSettingsArgs = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
