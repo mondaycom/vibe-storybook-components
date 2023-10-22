@@ -1,5 +1,4 @@
 import { ArgTypes, DecoratorFunction } from '@storybook/types';
-import { ReactRenderer } from '@storybook/react';
 
 export type EnumPropNames = {
   propName: string;
@@ -21,7 +20,7 @@ export type AllowedIcons = {
   mapping: { [key: string]: unknown };
 };
 
-export type Decorator = DecoratorFunction<ReactRenderer>;
+export type Decorator = DecoratorFunction<never>[];
 
 export type StoryMetaSettingsArgs = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
