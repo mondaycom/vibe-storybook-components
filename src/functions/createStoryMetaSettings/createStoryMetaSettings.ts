@@ -1,7 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import { AllowedIcons, Decorator, IconMetaData, StoryMetaSettingsArgs, StoryMetaSettingsResult } from './types';
-import { StoryContext, ArgTypes } from '@storybook/types';
+import { ArgTypes } from '@storybook/types';
 
 function parseStringForEnums(componentName: string, enumName: string, enumObj: { [key: string]: unknown }) {
   let returnValue;
@@ -27,7 +27,7 @@ function parseStringForEnum(componentName: string, enumName: string, enumKey: st
  * @returns A decorate for storybook which updates the {@link linkedToPropValue} input of the component, whenever {@link actionName} is called.
  */
 function createMappedActionToInputPropDecorator(actionName: string, linkedToPropValue: string): Decorator {
-  const decorator = (Story: () => unknown, context: StoryContext) => {
+  return (Story, context) => {
     const [propValue, setPropValue] = useState(context.initialArgs[linkedToPropValue]);
     const createAction = useMemo(() => action(actionName), []);
 
@@ -44,7 +44,6 @@ function createMappedActionToInputPropDecorator(actionName: string, linkedToProp
 
     return Story();
   };
-  return decorator as unknown as Decorator;
 }
 
 export function createStoryMetaSettings({
