@@ -2,8 +2,8 @@ import { FC, useMemo } from 'react';
 import cx from 'classnames';
 import styles from './story-description.module.scss';
 import { ElementContent, withStaticProps } from '../../types';
-import { FlexAlign, FlexDirection, FlexGap, FlexJustify } from 'src/helpers/components/Flex/FlexConstants';
-import Flex from 'src/helpers/components/Flex/Flex';
+import { FlexAlign, FlexDirection, FlexGap, FlexJustify } from '../../helpers/components/Flex/FlexConstants';
+import Flex from '../../helpers/components/Flex/Flex';
 
 type StoryDescriptionProps = {
   align?: FlexAlign;
