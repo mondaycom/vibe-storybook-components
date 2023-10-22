@@ -1,5 +1,96 @@
 # Changelog
 
+## 0.9.4 (2023-10-18)
+
+#### Bug Fixes
+* [#88](https://github.com/mondaycom/vibe-storybook-components/pull/88) fix: dependency issue, upgrade storybook ^7.5.0 ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+## 0.9.3 (2023-10-18)
+
+#### Bug Fixes
+* [#87](https://github.com/mondaycom/vibe-storybook-components/pull/87) fix: < ComponentName /> use text-color-fixed-dark ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+## 0.9.2 (2023-10-17)
+
+#### Bug Fixes
+* [#86](https://github.com/mondaycom/vibe-storybook-components/pull/86) chore: fix theme switcher type error ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+#### Documentation
+* [#79](https://github.com/mondaycom/vibe-storybook-components/pull/79) Feat: add theme switching to storybook ([@pedaars](https://github.com/pedaars))
+* [#84](https://github.com/mondaycom/vibe-storybook-components/pull/84) docs: Add story for < ComponentName /> component ([@Dhoni77](https://github.com/Dhoni77))
+
+#### Internal Changes
+* [#85](https://github.com/mondaycom/vibe-storybook-components/pull/85) chore: fix package-lock.json ([@SergeyRoyt](https://github.com/SergeyRoyt))
+* [#81](https://github.com/mondaycom/vibe-storybook-components/pull/81) Migrated < AnchorListItem />, < ComponentName />, < DocFooter /> to CSS modules ([@balajik](https://github.com/balajik))
+* [#82](https://github.com/mondaycom/vibe-storybook-components/pull/82) Migrated < TokenTable /> , < ColorDescription /> to TS ([@balajik](https://github.com/balajik))
+* [#73](https://github.com/mondaycom/vibe-storybook-components/pull/73) feat: Migrate < ComponentRule />, < ComponentRules /> to css modules ([@Dhoni77](https://github.com/Dhoni77))
+* [#75](https://github.com/mondaycom/vibe-storybook-components/pull/75) Migrated < InformationBox />, < InformationBoxTitle /> to TS ([@balajik](https://github.com/balajik))
+* [#74](https://github.com/mondaycom/vibe-storybook-components/pull/74) Migrated < FunctionArgument />, < FunctionArguments />, < MultipleStoryElementsWrapper /> to TS ([@balajik](https://github.com/balajik))
+* [#65](https://github.com/mondaycom/vibe-storybook-components/pull/65) Convert UnstyledList UnstyledListItem Title to TSX ([@Ryan-Biondo](https://github.com/Ryan-Biondo))
+* [#70](https://github.com/mondaycom/vibe-storybook-components/pull/70) TS migration: < SectionName />, < RelatedComponent />, < RelatedComponents /> ([@Kritik-J](https://github.com/Kritik-J))
+* [#72](https://github.com/mondaycom/vibe-storybook-components/pull/72) infra: add build into test-workflow.yml ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+## 0.9.1 (2023-10-16)
+
+#### Bug Fixes
+* [#71](https://github.com/mondaycom/vibe-storybook-components/pull/71) fix: build issues ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+#### Internal Changes
+* [#59](https://github.com/mondaycom/vibe-storybook-components/pull/59) feat: migrated < Paragrapgh />, < MultipleStoryElementsWrapper />, < Link /> to scss modules ([@Dhoni77](https://github.com/Dhoni77))
+* [#67](https://github.com/mondaycom/vibe-storybook-components/pull/67) TS migration: < UsageGuidelines />, < VisualDescription /> ([@Kritik-J](https://github.com/Kritik-J))
+* [#58](https://github.com/mondaycom/vibe-storybook-components/pull/58) Migrated <AnchorListItem>, <ComponentDescription>, <ComponentName> components to TS ([@balajik](https://github.com/balajik))
+* [#60](https://github.com/mondaycom/vibe-storybook-components/pull/60) TS migration: < ComponentRule />, < ComponentRules /> ([@Kritik-J](https://github.com/Kritik-J))
+* [#57](https://github.com/mondaycom/vibe-storybook-components/pull/57) Migrated < DocFooter />, < Frame />, < Paragraph /> and also child component <SectionName /> to TS ([@balajik](https://github.com/balajik))
+* [#55](https://github.com/mondaycom/vibe-storybook-components/pull/55) Migrated < InformationBox />, < InformationBoxTitle />, < Frame /> to CSS modules ([@balajik](https://github.com/balajik))
+* [#54](https://github.com/mondaycom/vibe-storybook-components/pull/54) CSS modules migration: < SectionName />, < RelatedComponent />, < RelatedComponents /> ([@Kritik-J](https://github.com/Kritik-J))
+* [#53](https://github.com/mondaycom/vibe-storybook-components/pull/53) chore: prettier cleanup ([@SergeyRoyt](https://github.com/SergeyRoyt))
+* [#51](https://github.com/mondaycom/vibe-storybook-components/pull/51) CSS modules migration: < UnstyledList />, < UnstyledListItem />, < Title />  ([@Kritik-J](https://github.com/Kritik-J))
+* [#52](https://github.com/mondaycom/vibe-storybook-components/pull/52) CSS modules migration: < UsageGuidelines />, < VisualDescription /> ([@Kritik-J](https://github.com/Kritik-J))
+
+## 0.9.0 (2023-10-10)
+
+#### New Features
+* [#48](https://github.com/mondaycom/vibe-storybook-components/pull/48) Add sidebar item ([@talkor](https://github.com/talkor))
+
+## 0.8.0 (2023-10-09)
+
+#### New Features
+* [#47](https://github.com/mondaycom/vibe-storybook-components/pull/47) feat: mixin sb-basic-text - disable font smoothing ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+## 0.7.1 (2023-10-09)
+
+#### Bug Fixes
+* [#34](https://github.com/mondaycom/vibe-storybook-components/pull/34) Export Tip, AlphaWarning, DeprecatedWarning components ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+#### Documentation
+* [#36](https://github.com/mondaycom/vibe-storybook-components/pull/36) docs: TYPESCRIPT_MIGRATION.md ([@SergeyRoyt](https://github.com/SergeyRoyt))
+* [#46](https://github.com/mondaycom/vibe-storybook-components/pull/46) docs: CSS_MODULES_MIGRATION.md ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+#### Internal Changes
+* [#35](https://github.com/mondaycom/vibe-storybook-components/pull/35) Export components withStaticProps ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+## 0.7.0 (2023-10-05)
+
+#### New Features
+* [#33](https://github.com/mondaycom/vibe-storybook-components/pull/33) feat: add StatusTag ([@talkor](https://github.com/talkor))
+
+## 0.6.0 (2023-10-05)
+
+#### New Features
+* [#30](https://github.com/mondaycom/vibe-storybook-components/pull/30) feat: createMetastorySettings - string type for ContentElement controls, disable action controls ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+## 0.5.0 (2023-10-05)
+
+#### New Features
+* [#28](https://github.com/mondaycom/vibe-storybook-components/pull/28) createStoryMetaSettings.js add ignoreControlsPropNamesArray ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+#### Documentation
+* [#26](https://github.com/mondaycom/vibe-storybook-components/pull/26) docs: contibuting.md + components_documentation_guidelines.md ([@SergeyRoyt](https://github.com/SergeyRoyt))
+* [#23](https://github.com/mondaycom/vibe-storybook-components/pull/23) docs(Storybook): document UsageGuidelines ([@talkor](https://github.com/talkor))
+
+#### Internal Changes
+* [#27](https://github.com/mondaycom/vibe-storybook-components/pull/27) infra: test-workflow.yml - remove push trigger ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
 ## 0.4.0 (2023-10-02)
 
 #### New Features

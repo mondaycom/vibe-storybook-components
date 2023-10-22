@@ -1,0 +1,23 @@
+@import "../../styles/mixins/typography";
+
+.usageGuidelines{
+  &Guideline {
+    color: var(--sb-primary-text-color);
+    margin: var(--sb-spacing-medium) var(--sb-spacing-small);
+    display: flex;
+    align-items: center;
+    @include sb-content-text;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &Icon {
+    font-size: 16px;
+    line-height: 21px;
+    margin-right: var(--sb-spacing-medium);
+    display: flex;
+    align-self: flex-start;
+    margin-top: var(--sb-spacing-xxs);
+  }
+}

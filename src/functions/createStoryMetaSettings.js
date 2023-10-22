@@ -52,10 +52,11 @@ export function createStoryMetaSettings({
   actionPropsArray,
   iconsMetaData,
   allIconsComponents,
+  ignoreControlsPropNamesArray,
 }) {
   const argTypes = {};
   const decorators = [];
-  const allowedIcons = iconsMetaData.reduce(
+  const allowedIcons = iconsMetaData?.reduce(
     (acc, icon) => {
       const Component = allIconsComponents[icon.file.split('.')[0]];
       acc.options.push(icon.name);
@@ -108,10 +109,30 @@ export function createStoryMetaSettings({
 
   actionPropsArray?.forEach(actionProp => {
     if (typeof actionProp === 'string') {
-      argTypes[actionProp] = { action: actionProp };
+      argTypes[actionProp] = { action: actionProp, control: false };
     } else if (actionProp?.name && actionProp.linkedToPropValue) {
       // we assume that actionPropsArray is static. If it changes, things may break, since internally we call React.useState for the story decorator.
       decorators.push(createMappedActionToInputPropDecorator(actionProp.name, actionProp.linkedToPropValue));
+    }
+  });
+
+  // If prop type is ElementContent, set text control, otherwise it's displaying as object
+  const componentProps = component?.__docgenInfo?.props;
+  if (componentProps) {
+    Object.keys(componentProps)?.forEach(propName => {
+      const prop = componentProps[propName];
+      if (prop?.type?.name === 'ElementContent') {
+        argTypes[propName] = { control: { type: 'text' } };
+      }
+    });
+  }
+
+  // Disable controls for specific props
+  ignoreControlsPropNamesArray?.forEach(propName => {
+    if (argTypes[propName] instanceof Object) {
+      argTypes[propName] = { ...argTypes[propName], control: false };
+    } else {
+      argTypes[propName] = { control: false };
     }
   });
 
