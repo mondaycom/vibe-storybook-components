@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.10.0 (2023-10-23)
+
+#### New Features
+* [#83](https://github.com/mondaycom/vibe-storybook-components/pull/83) feat: Migrate < Link />, < StoryDescription /> to ts ([@Dhoni77](https://github.com/Dhoni77))
+
+#### Internal Changes
+* [#106](https://github.com/mondaycom/vibe-storybook-components/pull/106) chore: prettier fix ([@SergeyRoyt](https://github.com/SergeyRoyt))
+* [#105](https://github.com/mondaycom/vibe-storybook-components/pull/105) chore: migrate <ColorDescription/> to css modules ([@Dhoni77](https://github.com/Dhoni77))
+
+## 0.9.5 (2023-10-23)
+
+#### Bug Fixes
+* [#98](https://github.com/mondaycom/vibe-storybook-components/pull/98) fix createStoryMettasettings fix types ([@SergeyRoyt](https://github.com/SergeyRoyt))
+
+#### Documentation
+* [#93](https://github.com/mondaycom/vibe-storybook-components/pull/93) docs: create basic story for < ComponentDescription />, < UnstyledList /> + < UnstyledListItem /> ([@Dhoni77](https://github.com/Dhoni77))
+* [#95](https://github.com/mondaycom/vibe-storybook-components/pull/95) docs: add story for < TokenTable /> ([@Dhoni77](https://github.com/Dhoni77))
+* [#97](https://github.com/mondaycom/vibe-storybook-components/pull/97) Created story from Paragraph and Frame components ([@balajik](https://github.com/balajik))
+* [#94](https://github.com/mondaycom/vibe-storybook-components/pull/94) docs: Create basic story for < VisualDescription />, < ColorDescription /> ([@Dhoni77](https://github.com/Dhoni77))
+
+#### Internal Changes
+* [#96](https://github.com/mondaycom/vibe-storybook-components/pull/96) Migrated the component to TS ([@balajik](https://github.com/balajik))
+* [#32](https://github.com/mondaycom/vibe-storybook-components/pull/32) ci: add storybook and chromatic workflows ([@talkor](https://github.com/talkor))
+
 ## 0.9.4 (2023-10-18)
 
 #### Bug Fixes
