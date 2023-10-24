@@ -14,6 +14,6 @@ export const Overview: Story = {
   args: {
     description: 'Deprecated',
     children: <StatusTag type="deprecated" />,
-    justify: 'Center',
+    justify: FlexJustify.CENTER,
   },
 };
