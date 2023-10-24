@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import StoryDescription from '../story-description';
 import StatusTag from '../../status-tag/status-tag';
+import { FlexJustify } from '../../../helpers/components/Flex/FlexConstants';
 
 const meta: Meta<typeof StoryDescription> = {
   component: StoryDescription,
