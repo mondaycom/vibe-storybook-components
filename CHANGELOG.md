@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.10.2 (2023-10-23)
+
+#### Bug Fixes
+* [#108](https://github.com/mondaycom/vibe-storybook-components/pull/108) fix(SidebarItem): flex the container ([@talkor](https://github.com/talkor))
+
+## 0.10.1 (2023-10-23)
+
+#### Bug Fixes
+* [#100](https://github.com/mondaycom/vibe-storybook-components/pull/100) fix(SidebarItem): add ellipsis to item name ([@talkor](https://github.com/talkor))
+
+#### Documentation
+* [#99](https://github.com/mondaycom/vibe-storybook-components/pull/99) docs: replace logo in storybook ([@talkor](https://github.com/talkor))
+
+## 0.10.0 (2023-10-23)
+
+#### New Features
+* [#83](https://github.com/mondaycom/vibe-storybook-components/pull/83) feat: Migrate < Link />, < StoryDescription /> to ts ([@Dhoni77](https://github.com/Dhoni77))
+
+#### Internal Changes
+* [#106](https://github.com/mondaycom/vibe-storybook-components/pull/106) chore: prettier fix ([@SergeyRoyt](https://github.com/SergeyRoyt))
+* [#105](https://github.com/mondaycom/vibe-storybook-components/pull/105) chore: migrate <ColorDescription/> to css modules ([@Dhoni77](https://github.com/Dhoni77))
+
 ## 0.9.5 (2023-10-23)
 
 #### Bug Fixes
