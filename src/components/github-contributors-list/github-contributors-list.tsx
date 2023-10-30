@@ -2,7 +2,6 @@ import { FC, useEffect, useMemo, useState } from 'react';
 import ContributorsList from './contributors-list';
 import Paragraph from '../../../src/components/paragraph/paragraph';
 import { getAllContributors, GithubContributor, GithubContributorResponse } from './github-contributors-utils';
-import styles from './github-contributors-list.module.scss';
 
 interface GithubContributorsListProps {
   organizationName: string;
@@ -44,7 +43,7 @@ const GithubContributorsList: FC<GithubContributorsListProps> = ({
   }, [contributorsJson]);
 
   return (
-    <Paragraph className={styles.contributorsList}>
+    <Paragraph>
       <>
         {text}
         {contributors}

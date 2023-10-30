@@ -5,7 +5,7 @@ import './paragraph.module.scss';
 
 type ParagraphProps = {
   children: ElementContent;
-  className: string;
+  className?: string;
 };
 
 const Paragraph: FC<ParagraphProps> = ({ children, className }) => (
