@@ -6,7 +6,7 @@ export type GithubContributor = {
 };
 
 export type GithubContributorResponse = {
-  id: string;
+  id: number;
   login: string;
   html_url: string;
   contributions: number;

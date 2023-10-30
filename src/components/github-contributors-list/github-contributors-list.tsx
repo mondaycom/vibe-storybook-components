@@ -8,7 +8,7 @@ interface GithubContributorsListProps {
   packageName: string;
   text?: string;
   showContributionAmount?: boolean;
-  excludedContributorsIds?: Set<string>;
+  excludedContributorsIds?: Set<number>;
   staticContributors?: GithubContributor[];
 }
 
@@ -28,15 +28,23 @@ const GithubContributorsList: FC<GithubContributorsListProps> = ({
   const contributors = useMemo(() => {
     if (contributorsJson && Array.isArray(contributorsJson)) {
       // developer contributors
+      console.log('### excludedContributorsIds', excludedContributorsIds);
+      console.log(
+        '### contributorsJson',
+        contributorsJson.map(c => c.id),
+      );
       const developerContributors = contributorsJson
         .filter(contributor => !excludedContributorsIds.has(contributor.id))
         .sort((a, b) => (b?.contributions || 0) - (a?.contributions || 0))
-        .map(contributor => ({
-          name: contributor.login,
-          href: contributor.html_url,
-          key: contributor.id,
-          contributions: contributor.contributions,
-        }));
+        .map(
+          contributor =>
+            ({
+              name: contributor.login,
+              href: contributor.html_url,
+              key: contributor.id.toString(),
+              contributions: contributor.contributions,
+            }) as GithubContributor,
+        );
       const contributorsData = staticContributors.concat(developerContributors);
       return <ContributorsList contributorsData={contributorsData} showContributionAmount={showContributionAmount} />;
     }
