@@ -9,6 +9,7 @@ export { default as DocFooter } from './doc-footer/doc-footer';
 export { default as Frame } from './frame/frame';
 export { default as FunctionArgument } from './function-arguments/function-argument';
 export { default as FunctionArguments } from './function-arguments/function-arguments';
+export { default as ContributorsList } from './github-contributors-list/contributors-list';
 export { default as GithubContributorsList } from './github-contributors-list/github-contributors-list';
 export { default as InformationBox } from './information-box/information-box';
 export { default as InformationBoxTitle } from './information-box-title/information-box-title';
