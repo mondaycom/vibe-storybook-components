@@ -9,14 +9,14 @@ interface GithubContributorsListProps {
   packageName: string;
   text?: string;
   showContributionAmount?: boolean;
-  excludedDevelopersIds?: Set<string>;
+  excludedContributorsIds?: Set<string>;
   staticContributors?: GithubContributor[];
 }
 
 const GithubContributorsList: FC<GithubContributorsListProps> = ({
   organizationName,
   packageName,
-  excludedDevelopersIds = new Set(),
+  excludedContributorsIds = new Set(),
   staticContributors = [],
   text = 'Thanks to all of our contributors: ',
   showContributionAmount = false,
@@ -30,7 +30,7 @@ const GithubContributorsList: FC<GithubContributorsListProps> = ({
     if (contributorsJson && Array.isArray(contributorsJson)) {
       // developer contributors
       const developerContributors = contributorsJson
-        .filter(contributor => !excludedDevelopersIds.has(contributor.id))
+        .filter(contributor => !excludedContributorsIds.has(contributor.id))
         .sort((a, b) => (b?.contributions || 0) - (a?.contributions || 0))
         .map(contributor => ({
           name: contributor.login,
