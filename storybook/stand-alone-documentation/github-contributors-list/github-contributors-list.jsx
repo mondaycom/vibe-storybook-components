@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Contributors } from './contributors';
 import Paragraph from '../../../src/components/paragraph/paragraph';
-import './other-contributors-list.scss';
+import './github-contributors-list.scss';
 
 const BASE_CLASS = 'monday-other-contributors-list';
 
@@ -33,7 +33,7 @@ async function getAllContributors() {
   return contributors;
 }
 
-export const OtherContributorsList = () => {
+export const GithubContributorsList = () => {
   const [contributorsJson, setContributorsJson] = useState();
   useEffect(() => {
     getAllContributors().then(contributors => setContributorsJson(contributors));
@@ -54,11 +54,5 @@ export const OtherContributorsList = () => {
     }
   }, [contributorsJson]);
 
-  return (
-    <>
-      <Paragraph className={BASE_CLASS}>
-        {contributors ? <>Thanks to all of our contributors: {contributors}</> : null}
-      </Paragraph>
-    </>
-  );
+  return <Paragraph className={BASE_CLASS}>{contributors}</Paragraph>;
 };
