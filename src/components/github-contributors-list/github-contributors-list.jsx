@@ -31,7 +31,7 @@ async function getAllContributors() {
   return contributors;
 }
 
-export const GithubContributorsList = () => {
+const GithubContributorsList = () => {
   const [contributorsJson, setContributorsJson] = useState();
   useEffect(() => {
     getAllContributors().then(contributors => setContributorsJson(contributors));
@@ -54,3 +54,5 @@ export const GithubContributorsList = () => {
 
   return <Paragraph className={styles.contributorsList}>{contributors}</Paragraph>;
 };
+
+export default GithubContributorsList;
