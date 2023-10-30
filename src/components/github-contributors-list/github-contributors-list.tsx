@@ -28,11 +28,6 @@ const GithubContributorsList: FC<GithubContributorsListProps> = ({
   const contributors = useMemo(() => {
     if (contributorsJson && Array.isArray(contributorsJson)) {
       // developer contributors
-      console.log('### excludedContributorsIds', excludedContributorsIds);
-      console.log(
-        '### contributorsJson',
-        contributorsJson.map(c => c.id),
-      );
       const developerContributors = contributorsJson
         .filter(contributor => !excludedContributorsIds.has(contributor.id))
         .sort((a, b) => (b?.contributions || 0) - (a?.contributions || 0))
