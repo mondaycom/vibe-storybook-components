@@ -1,9 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Contributors } from './contributors';
 import Paragraph from '../../../src/components/paragraph/paragraph';
-import './github-contributors-list.scss';
-
-const BASE_CLASS = 'monday-other-contributors-list';
+import styles from './github-contributors-list.module.scss';
 
 const excludedDevelopers = new Set();
 
@@ -54,5 +52,5 @@ export const GithubContributorsList = () => {
     }
   }, [contributorsJson]);
 
-  return <Paragraph className={BASE_CLASS}>{contributors}</Paragraph>;
+  return <Paragraph className={styles.contributorsList}>{contributors}</Paragraph>;
 };

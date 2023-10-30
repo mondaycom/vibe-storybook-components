@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import cx from 'classnames';
 import Link from '../../../src/components/link/link';
+import styles from './contributors.module.scss';
 
 type Contributor = {
   name: string;
@@ -17,11 +18,7 @@ export const Contributors: FC<contributorsDataProps> = ({ contributorsData }) =>
   return (
     <>
       {contributorsData.map(({ name, href, key }, index) => (
-        <Link
-          key={key || href}
-          href={href}
-          className={cx({ ['monday-other-contributors-list_contributor']: index < lastIndex })}
-        >
+        <Link key={key || href} href={href} className={cx({ [styles.contributor]: index < lastIndex })}>
           {name}
         </Link>
       ))}
