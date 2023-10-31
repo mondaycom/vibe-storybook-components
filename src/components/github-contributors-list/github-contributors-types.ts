@@ -1,6 +1,7 @@
 export type GithubContributor = {
   name: string;
   href: string;
+  id?: number;
   key?: string;
   contributions?: number;
 };

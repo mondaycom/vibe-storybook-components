@@ -35,6 +35,7 @@ const GithubContributorsList: FC<GithubContributorsListProps> = ({
         .map(
           contributor =>
             ({
+              id: contributor.id,
               name: contributor.login,
               href: contributor.html_url,
               key: contributor.id.toString(),
