@@ -1,6 +1,6 @@
 import { GithubContributorResponse } from './github-contributors-types';
 
-export async function getContributors(organizationName: string, packageName: string, page: number) {
+export async function fetchContributors(organizationName: string, packageName: string, page: number) {
   const request = await fetch(
     `https://api.github.com/repos/${organizationName}/${packageName}/contributors?per_page=100&page=${page}&order=desc`,
     {
@@ -14,12 +14,12 @@ export async function getContributors(organizationName: string, packageName: str
   return await request.json();
 }
 
-export async function getAllContributors(organizationName: string, packageName: string) {
+export async function fetchAllContributors(organizationName: string, packageName: string) {
   let contributors: GithubContributorResponse[] = [];
   let page = 1;
   let list;
   do {
-    list = await getContributors(organizationName, packageName, page++);
+    list = await fetchContributors(organizationName, packageName, page++);
     contributors = contributors.concat(list);
   } while (list.length > 0);
 

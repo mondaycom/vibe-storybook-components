@@ -9,7 +9,7 @@ interface ContributorsListProps {
   showContributionAmount?: boolean;
 }
 
-const ContributorsList: FC<ContributorsListProps> = ({ contributorsData, showContributionAmount }) => {
+const ContributorsList: FC<ContributorsListProps> = ({ contributorsData, showContributionAmount = false }) => {
   const lastIndex = contributorsData.length - 1;
   return (
     <>

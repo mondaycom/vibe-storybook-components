@@ -1,7 +1,7 @@
 import { FC, useEffect, useMemo, useState } from 'react';
 import ContributorsList from './contributors-list';
 import Paragraph from '../../../src/components/paragraph/paragraph';
-import { getAllContributors } from './github-contributors-utils';
+import { fetchAllContributors } from './github-contributors-utils';
 import { GithubContributor, GithubContributorResponse } from './github-contributors-types';
 
 interface GithubContributorsListProps {
@@ -23,7 +23,7 @@ const GithubContributorsList: FC<GithubContributorsListProps> = ({
 }) => {
   const [contributorsJson, setContributorsJson] = useState<GithubContributorResponse[]>();
   useEffect(() => {
-    getAllContributors(organizationName, packageName).then(contributors => setContributorsJson(contributors));
+    fetchAllContributors(organizationName, packageName).then(contributors => setContributorsJson(contributors));
   }, []);
 
   const contributors = useMemo(() => {
