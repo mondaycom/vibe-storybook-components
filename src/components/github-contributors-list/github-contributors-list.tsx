@@ -1,7 +1,8 @@
 import { FC, useEffect, useMemo, useState } from 'react';
 import ContributorsList from './contributors-list';
 import Paragraph from '../../../src/components/paragraph/paragraph';
-import { getAllContributors, GithubContributor, GithubContributorResponse } from './github-contributors-utils';
+import { getAllContributors } from './github-contributors-utils';
+import { GithubContributor, GithubContributorResponse } from './github-contributors-types';
 
 interface GithubContributorsListProps {
   organizationName: string;

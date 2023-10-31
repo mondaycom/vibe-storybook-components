@@ -1,16 +1,4 @@
-export type GithubContributor = {
-  name: string;
-  href: string;
-  key?: string;
-  contributions?: number;
-};
-
-export type GithubContributorResponse = {
-  id: number;
-  login: string;
-  html_url: string;
-  contributions: number;
-};
+import { GithubContributorResponse } from './github-contributors-types';
 
 export async function getContributors(organizationName: string, packageName: string, page: number) {
   const request = await fetch(

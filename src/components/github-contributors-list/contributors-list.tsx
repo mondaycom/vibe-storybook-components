@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import cx from 'classnames';
 import Link from '../../../src/components/link/link';
-import { GithubContributor } from './github-contributors-utils';
+import { GithubContributor } from './github-contributors-types';
 import styles from './contributors.module.scss';
 
 interface ContributorsListProps {
