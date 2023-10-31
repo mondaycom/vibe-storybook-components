@@ -21,30 +21,27 @@ const GithubContributorsList: FC<GithubContributorsListProps> = ({
   text = 'Thanks to all of our contributors: ',
   showContributionAmount = false,
 }) => {
-  const [contributorsJson, setContributorsJson] = useState<GithubContributorResponse[]>();
+  const [contributorsJson, setContributorsJson] = useState<GithubContributorResponse[]>([]);
   useEffect(() => {
     fetchAllContributors(organizationName, packageName).then(contributors => setContributorsJson(contributors));
   }, []);
 
   const contributors = useMemo(() => {
-    if (contributorsJson && Array.isArray(contributorsJson)) {
-      // developer contributors
-      const developerContributors = contributorsJson
-        .filter(contributor => !excludedContributorsIds.has(contributor.id))
-        .sort((a, b) => (b?.contributions || 0) - (a?.contributions || 0))
-        .map(
-          contributor =>
-            ({
-              id: contributor.id,
-              name: contributor.login,
-              href: contributor.html_url,
-              key: contributor.id.toString(),
-              contributions: contributor.contributions,
-            }) as GithubContributor,
-        );
-      const contributorsData = staticContributors.concat(developerContributors);
-      return <ContributorsList contributorsData={contributorsData} showContributionAmount={showContributionAmount} />;
-    }
+    const developerContributors = contributorsJson
+      .filter(contributor => !excludedContributorsIds.has(contributor.id))
+      .sort((a, b) => (b?.contributions || 0) - (a?.contributions || 0))
+      .map(
+        contributor =>
+          ({
+            id: contributor.id,
+            name: contributor.login,
+            href: contributor.html_url,
+            key: contributor.id.toString(),
+            contributions: contributor.contributions,
+          }) as GithubContributor,
+      );
+    const contributorsData = staticContributors.concat(developerContributors);
+    return <ContributorsList contributorsData={contributorsData} showContributionAmount={showContributionAmount} />;
   }, [contributorsJson]);
 
   return (

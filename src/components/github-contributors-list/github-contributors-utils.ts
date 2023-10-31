@@ -1,17 +1,23 @@
 import { GithubContributorResponse } from './github-contributors-types';
 
 export async function fetchContributors(organizationName: string, packageName: string, page: number) {
-  const request = await fetch(
-    `https://api.github.com/repos/${organizationName}/${packageName}/contributors?per_page=100&page=${page}&order=desc`,
-    {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
+  try {
+    const request = await fetch(
+      `https://api.github.com/repos/${organizationName}/${packageName}/contributors?per_page=100&page=${page}&order=desc`,
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
       },
-    },
-  );
+    );
 
-  return await request.json();
+    const contributors: GithubContributorResponse[] = await request.json();
+    return contributors;
+  } catch (e) {
+    console.error('Error while loading Github contributors, page ', page, ' - ', e);
+    return [];
+  }
 }
 
 export async function fetchAllContributors(organizationName: string, packageName: string) {
