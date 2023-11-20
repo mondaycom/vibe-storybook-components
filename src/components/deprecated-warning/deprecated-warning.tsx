@@ -6,10 +6,10 @@ import { ElementContent } from '../../types';
 interface DeprecatedWarningProps {
   alternativeName: string;
   alternativeLink: string;
-  children: ElementContent;
+  additionalContent: ElementContent;
 }
 
-const DeprecatedWarning: FC<DeprecatedWarningProps> = ({ alternativeName, alternativeLink, children }) => (
+const DeprecatedWarning: FC<DeprecatedWarningProps> = ({ alternativeName, alternativeLink, additionalContent }) => (
   <Tip emoji="🚨" title="Deprecated component" type={Tip.types.DANGER}>
     <>
       This is a legacy component and will be deprecated in the next major version. Please consider using the
@@ -17,7 +17,7 @@ const DeprecatedWarning: FC<DeprecatedWarningProps> = ({ alternativeName, altern
         {alternativeName}
       </Link>
       component for your needs instead.
-      {children}
+      {additionalContent}
     </>
   </Tip>
 );
