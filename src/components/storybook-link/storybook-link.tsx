@@ -20,7 +20,7 @@ const StorybookLink: FC<StorybookLinkProps> = ({ page, story = '', children }) =
   }, []);
 
   return (
-    <Link href={url} target={Link.targets.SELF} withoutSpacing>
+    <Link href={url} target={Link.targets.TOP} withoutSpacing>
       {children}
     </Link>
   );
