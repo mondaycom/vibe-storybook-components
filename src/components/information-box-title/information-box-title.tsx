@@ -1,9 +1,9 @@
-import { FC } from 'react';
-import cx from 'classnames';
-import { ElementContent, withStaticProps } from '../../types';
-import Link from '../link/link';
-import { LinkTarget } from '../link/LinkConstants';
-import styles from './information-box-title.module.scss';
+import { FC } from "react";
+import cx from "classnames";
+import { ElementContent, withStaticProps } from "../../types";
+import Link from "../link/link";
+import { LinkTarget } from "../link/LinkConstants";
+import styles from "./information-box-title.module.scss";
 
 type InformationBoxTitleProps = {
   children: ElementContent;
@@ -16,7 +16,7 @@ const InformationBoxTitle: FC<InformationBoxTitleProps> & { linkTargets?: typeof
   href,
   linkTarget,
 }) => {
-  return href && typeof children === 'string' ? (
+  return href && typeof children === "string" ? (
     <Link className={cx(styles.informationBoxTitle)} href={href} withoutSpacing target={linkTarget}>
       {children}
     </Link>

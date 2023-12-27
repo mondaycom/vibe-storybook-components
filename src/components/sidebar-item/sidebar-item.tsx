@@ -1,9 +1,9 @@
-import React from 'react';
-import StatusTag from '../status-tag/status-tag';
-import { type StatusTagType } from '../status-tag/status-tag';
-import Flex from '../../../src/helpers/components/Flex/Flex';
-import { ElementContent } from '../../types';
-import styles from './sidebar-item.module.scss';
+import React from "react";
+import StatusTag from "../status-tag/status-tag";
+import { type StatusTagType } from "../status-tag/status-tag";
+import Flex from "../../../src/helpers/components/Flex/Flex";
+import { ElementContent } from "../../types";
+import styles from "./sidebar-item.module.scss";
 
 interface SidebarItemProps {
   children: ElementContent;

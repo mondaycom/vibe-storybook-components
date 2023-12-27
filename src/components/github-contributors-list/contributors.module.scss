@@ -1,6 +1,6 @@
-@import '../../../src/styles/mixins/typography';
+@import "../../../src/styles/mixins/typography";
 
 .contributor::after {
   @include sb-small-text;
-  content: ',';
+  content: ",";
 }

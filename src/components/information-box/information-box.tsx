@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import InformationBoxTitle from '../information-box-title/information-box-title';
-import { ElementContent, withStaticProps } from '../../types';
-import { LinkTarget } from '../link/LinkConstants';
-import styles from './information-box.module.scss';
+import { FC } from "react";
+import InformationBoxTitle from "../information-box-title/information-box-title";
+import { ElementContent, withStaticProps } from "../../types";
+import { LinkTarget } from "../link/LinkConstants";
+import styles from "./information-box.module.scss";
 
 type InformationBoxProps = {
   component?: ElementContent;
@@ -14,13 +14,13 @@ type InformationBoxProps = {
 
 const InformationBox: FC<InformationBoxProps> & { linkTargets?: typeof LinkTarget } = ({
   component = null,
-  title = '',
-  description = '',
+  title = "",
+  description = "",
   href,
   linkTarget,
 }) => {
   const overrideTitle =
-    typeof title === 'string' ? (
+    typeof title === "string" ? (
       <InformationBoxTitle href={href} linkTarget={linkTarget}>
         {title}
       </InformationBoxTitle>

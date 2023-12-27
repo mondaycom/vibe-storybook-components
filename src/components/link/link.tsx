@@ -1,9 +1,9 @@
-import { FC } from 'react';
-import cx from 'classnames';
-import CoreLink from '../../helpers/components/Link/Link';
-import { LinkSize, LinkTarget } from './LinkConstants';
-import { withStaticProps } from '../../types';
-import styles from './link.module.scss';
+import { FC } from "react";
+import cx from "classnames";
+import CoreLink from "../../helpers/components/Link/Link";
+import { LinkSize, LinkTarget } from "./LinkConstants";
+import { withStaticProps } from "../../types";
+import styles from "./link.module.scss";
 
 export type LinkProps = {
   className?: string;

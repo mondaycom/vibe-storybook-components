@@ -1,5 +1,5 @@
-import React from 'react';
-import { Preview } from '@storybook/react';
+import React from "react";
+import { Preview } from "@storybook/react";
 import {
   AnchorListItem,
   ComponentRules,
@@ -17,11 +17,11 @@ import {
   UnstyledList,
   UnstyledListItem,
   UsageGuidelines,
-} from '../src';
-import { ComponentNameDecorator } from '../storybook/components';
-import { DocsContainer, DocsPage, Unstyled } from '@storybook/blocks';
-import { withThemeByClassName } from '@storybook/addon-themes';
-import '../src/styles/tokens/index.scss';
+} from "../src";
+import { ComponentNameDecorator } from "../storybook/components";
+import { DocsContainer, DocsPage, Unstyled } from "@storybook/blocks";
+import { withThemeByClassName } from "@storybook/addon-themes";
+import "../src/styles/tokens/index.scss";
 
 const preview: Preview = {
   parameters: {
@@ -62,18 +62,18 @@ const preview: Preview = {
     },
     options: {
       storySort: {
-        order: ['Welcome', 'Change Log', '*'],
+        order: ["Welcome", "Change Log", "*"],
       },
     },
   },
   decorators: [
     withThemeByClassName({
       themes: {
-        Light: 'light-app-theme',
-        Dark: 'dark-app-theme',
-        Black: 'black-app-theme',
+        Light: "light-app-theme",
+        Dark: "dark-app-theme",
+        Black: "black-app-theme",
       },
-      defaultTheme: 'Light',
+      defaultTheme: "Light",
     }) as any,
   ],
 };

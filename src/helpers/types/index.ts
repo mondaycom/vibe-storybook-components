@@ -1,2 +1,2 @@
-export * from './VibeComponent';
-export * from './VibeComponentProps';
+export * from "./VibeComponent";
+export * from "./VibeComponentProps";

@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import TableRow from './token-table-row';
-import TableHeadItem from './token-table-head-item';
-import styles from './token-table.module.scss';
+import { FC } from "react";
+import TableRow from "./token-table-row";
+import TableHeadItem from "./token-table-head-item";
+import styles from "./token-table.module.scss";
 
 type TableBody = {
   id: string;

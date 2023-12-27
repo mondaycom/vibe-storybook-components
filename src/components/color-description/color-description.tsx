@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import cx from 'classnames';
-import VisualDescription from '../visual-description/visual-description';
-import styles from './color-description.module.scss';
+import { FC } from "react";
+import cx from "classnames";
+import VisualDescription from "../visual-description/visual-description";
+import styles from "./color-description.module.scss";
 
 type ColorDescriptionProps = {
   colorName: string;

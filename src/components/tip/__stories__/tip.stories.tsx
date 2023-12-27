@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import Tip from '../tip';
-import Flex from '../../../helpers/components/Flex/Flex';
-import Link from '../../../helpers/components/Link/Link';
+import type { Meta, StoryObj } from "@storybook/react";
+import Tip from "../tip";
+import Flex from "../../../helpers/components/Flex/Flex";
+import Link from "../../../helpers/components/Link/Link";
 
 const meta: Meta<typeof Tip> = {
   component: Tip,
-  title: 'Components/Tip',
+  title: "Components/Tip",
 };
 export default meta;
 
@@ -24,9 +24,9 @@ export const Overview: Story = {
 
 export const Emoji: Story = {
   args: {
-    title: 'Completed',
-    children: 'This tip shows some helpful information.',
-    emoji: '✅',
+    title: "Completed",
+    children: "This tip shows some helpful information.",
+    emoji: "✅",
   },
 };
 

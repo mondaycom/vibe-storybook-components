@@ -1,8 +1,8 @@
-const path = require('path');
-const { resolve: resolveExports } = require('resolve.exports');
+const path = require("path");
+const { resolve: resolveExports } = require("resolve.exports");
 
 // optionally handle NodeJS built-ins just in case not handled by another ESLint module resolver in the chain
-const { builtinModules } = require('module');
+const { builtinModules } = require("module");
 const builtins = new Set(builtinModules);
 
 /**
@@ -24,7 +24,7 @@ const resolve = (source, file, _config) => {
 
     return { found: true, path: moduleId };
   } catch (/** @type {any} */ err) {
-    if (err.code === 'MODULE_NOT_FOUND' && err.path?.endsWith('/package.json')) {
+    if (err.code === "MODULE_NOT_FOUND" && err.path?.endsWith("/package.json")) {
       const { name, module, main, exports } = require(err.path);
       const resolved = resolveExports({ name, module, main, exports }, source);
       const moduleId = path.join(path.dirname(err.path), resolved);

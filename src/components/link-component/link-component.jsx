@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const LinkComponent = ({ children, href, target: originalTarget, rel }) => {
   const onClick = event => {
@@ -16,7 +16,7 @@ const LinkComponent = ({ children, href, target: originalTarget, rel }) => {
 
   return (
     <a
-      style={{ color: 'var(--sb-link-color)', textDecoration: 'none' }}
+      style={{ color: "var(--sb-link-color)", textDecoration: "none" }}
       onClick={onClick}
       target={originalTarget}
       rel={rel}

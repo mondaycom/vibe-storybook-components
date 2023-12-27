@@ -1,6 +1,6 @@
 @import "../../styles/mixins/typography";
 
-.informationBoxTitle{
+.informationBoxTitle {
   @include sb-content-text-without-color;
   font-weight: bold;
   margin-bottom: var(--sb-spacing-xs);

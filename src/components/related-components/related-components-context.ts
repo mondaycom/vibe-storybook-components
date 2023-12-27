@@ -1,5 +1,5 @@
-import React from 'react';
-import { LinkTarget } from '../link/LinkConstants';
+import React from "react";
+import { LinkTarget } from "../link/LinkConstants";
 
 type RelatedComponentsContextType = {
   linkTarget?: LinkTarget;
