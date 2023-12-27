@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 type Required<T> = {
   [P in keyof T]-?: T[P];

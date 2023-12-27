@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import styles from './status-tag.module.scss';
-import cx from 'classnames';
+import { FC } from "react";
+import styles from "./status-tag.module.scss";
+import cx from "classnames";
 
-export type StatusTagType = 'beta' | 'deprecated';
+export type StatusTagType = "beta" | "deprecated";
 
 interface StatusTagProps {
   type: StatusTagType;

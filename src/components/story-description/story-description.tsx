@@ -1,9 +1,9 @@
-import React, { FC, useMemo } from 'react';
-import cx from 'classnames';
-import { ElementContent, withStaticProps } from '../../types';
-import { FlexAlign, FlexDirection, FlexGap, FlexJustify } from '../../helpers/components/Flex/FlexConstants';
-import Flex from '../../helpers/components/Flex/Flex';
-import styles from './story-description.module.scss';
+import React, { FC, useMemo } from "react";
+import cx from "classnames";
+import { ElementContent, withStaticProps } from "../../types";
+import { FlexAlign, FlexDirection, FlexGap, FlexJustify } from "../../helpers/components/Flex/FlexConstants";
+import Flex from "../../helpers/components/Flex/Flex";
+import styles from "./story-description.module.scss";
 
 type StoryDescriptionProps = {
   align?: FlexAlign;
@@ -23,7 +23,7 @@ const StoryDescription: FC<StoryDescriptionProps> & {
   gaps?: typeof FlexGap;
   directions?: typeof FlexDirection;
 } = ({
-  description = '',
+  description = "",
   headerStyle,
   children,
   vertical = false,
@@ -48,7 +48,7 @@ const StoryDescription: FC<StoryDescriptionProps> & {
     >
       <Flex
         className={cx(styles.description, { [styles.vertical]: vertical })}
-        style={{ width: '120px', ...headerStyle }}
+        style={{ width: "120px", ...headerStyle }}
         justify={headerJustify}
         align={headerAlign || StoryDescription.align?.CENTER}
       >

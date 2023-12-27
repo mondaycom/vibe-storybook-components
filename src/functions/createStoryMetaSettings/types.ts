@@ -1,4 +1,4 @@
-import { ArgTypes, PartialStoryFn, StoryContext } from '@storybook/types';
+import { ArgTypes, PartialStoryFn, StoryContext } from "@storybook/types";
 
 export type EnumPropNames = {
   propName: string;

@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import cx from 'classnames';
-import styles from './component-name.module.scss';
+import { FC } from "react";
+import cx from "classnames";
+import styles from "./component-name.module.scss";
 
 type ComponentNameProps = {
   children: string;

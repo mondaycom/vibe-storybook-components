@@ -1,7 +1,7 @@
-import { useCallback, useMemo, useState } from 'react';
-import { action } from '@storybook/addon-actions';
-import { AllowedIcons, Decorator, IconMetaData, StoryMetaSettingsArgs, StoryMetaSettingsResult } from './types';
-import { ArgTypes } from '@storybook/types';
+import { useCallback, useMemo, useState } from "react";
+import { action } from "@storybook/addon-actions";
+import { AllowedIcons, Decorator, IconMetaData, StoryMetaSettingsArgs, StoryMetaSettingsResult } from "./types";
+import { ArgTypes } from "@storybook/types";
 
 function parseStringForEnums(componentName: string, enumName: string, enumObj: { [key: string]: unknown }) {
   let returnValue;
@@ -59,7 +59,7 @@ export function createStoryMetaSettings({
   const decorators: Decorator[] = [];
   const allowedIcons = iconsMetaData?.reduce(
     (acc: AllowedIcons, icon: IconMetaData) => {
-      const Component = allIconsComponents[icon.file.split('.')[0]];
+      const Component = allIconsComponents[icon.file.split(".")[0]];
       acc.options.push(icon.name);
       acc.mapping[icon.name] = Component;
 
@@ -103,13 +103,13 @@ export function createStoryMetaSettings({
       options: allowedIcons?.options,
       mapping: allowedIcons?.mapping,
       control: {
-        type: 'select',
+        type: "select",
       },
     };
   });
 
   actionPropsArray?.forEach(actionProp => {
-    if (typeof actionProp === 'string') {
+    if (typeof actionProp === "string") {
       argTypes[actionProp] = { action: actionProp, control: false };
     } else if (actionProp?.name && actionProp.linkedToPropValue) {
       // we assume that actionPropsArray is static. If it changes, things may break, since internally we call React.useState for the story decorator.
@@ -122,8 +122,8 @@ export function createStoryMetaSettings({
   if (componentProps) {
     Object.keys(componentProps)?.forEach(propName => {
       const prop = componentProps[propName];
-      if (prop?.type?.name === 'ElementContent') {
-        argTypes[propName] = { control: { type: 'text' } };
+      if (prop?.type?.name === "ElementContent") {
+        argTypes[propName] = { control: { type: "text" } };
       }
     });
   }

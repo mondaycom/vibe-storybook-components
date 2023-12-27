@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import Link from '../link/link';
-import Tip from '../tip/tip';
-import { ElementContent } from '../../types';
+import { FC } from "react";
+import Link from "../link/link";
+import Tip from "../tip/tip";
+import { ElementContent } from "../../types";
 
 interface DeprecatedWarningProps {
   alternativeName: string;

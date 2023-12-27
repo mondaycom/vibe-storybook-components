@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import cx from 'classnames';
-import Link from '../../../src/components/link/link';
-import { GithubContributor } from './github-contributors-types';
-import styles from './contributors.module.scss';
+import { FC } from "react";
+import cx from "classnames";
+import Link from "../../../src/components/link/link";
+import { GithubContributor } from "./github-contributors-types";
+import styles from "./contributors.module.scss";
 
 interface ContributorsListProps {
   contributorsData: Array<GithubContributor>;
@@ -15,7 +15,7 @@ const ContributorsList: FC<ContributorsListProps> = ({ contributorsData, showCon
     <>
       {contributorsData.map(({ name, href, key, contributions }, index) => (
         <Link key={key || href} href={href} className={cx({ [styles.contributor]: index < lastIndex })}>
-          {`${name}${showContributionAmount ? ` (${contributions})` : ''}`}
+          {`${name}${showContributionAmount ? ` (${contributions})` : ""}`}
         </Link>
       ))}
     </>

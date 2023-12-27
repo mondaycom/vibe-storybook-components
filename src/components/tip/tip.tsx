@@ -1,9 +1,9 @@
-import cx from 'classnames';
-import React from 'react';
-import Flex from '../../helpers/components/Flex/Flex';
-import { ElementContent, withStaticProps } from '../../types';
-import { TipTypes } from './tipConstants';
-import styles from './tip.module.scss';
+import cx from "classnames";
+import React from "react";
+import Flex from "../../helpers/components/Flex/Flex";
+import { ElementContent, withStaticProps } from "../../types";
+import { TipTypes } from "./tipConstants";
+import styles from "./tip.module.scss";
 
 interface TipProps {
   children: ElementContent;
@@ -14,7 +14,7 @@ interface TipProps {
 
 const Tip: React.FC<TipProps> & {
   types?: typeof TipTypes;
-} = ({ title = 'Tip', children, emoji = '🤓', type = TipTypes.DARK }) => {
+} = ({ title = "Tip", children, emoji = "🤓", type = TipTypes.DARK }) => {
   return (
     <div className={cx(styles.tip, styles[type])}>
       <div className={styles.title}>

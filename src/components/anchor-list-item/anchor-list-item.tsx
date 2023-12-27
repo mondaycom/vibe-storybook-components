@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import styles from './anchor-list-item.module.scss';
-import { ElementContent } from '../../types';
+import { FC } from "react";
+import styles from "./anchor-list-item.module.scss";
+import { ElementContent } from "../../types";
 
 type AnchorListItemProps = {
   children?: ElementContent;

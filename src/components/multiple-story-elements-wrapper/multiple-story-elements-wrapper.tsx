@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import cx from 'classnames';
-import styles from './multiple-story-elements-wrapper.module.scss';
-import { ElementContent } from '../../types';
+import { FC } from "react";
+import cx from "classnames";
+import styles from "./multiple-story-elements-wrapper.module.scss";
+import { ElementContent } from "../../types";
 
 type MultipleStoryElementsWrapperProps = {
   className: string;

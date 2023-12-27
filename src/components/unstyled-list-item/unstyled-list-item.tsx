@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './unstyled-list-item.module.scss';
+import React from "react";
+import styles from "./unstyled-list-item.module.scss";
 
 interface UnstyledListItemProps {
   children?: React.ReactNode;

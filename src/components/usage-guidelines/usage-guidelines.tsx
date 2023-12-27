@@ -1,6 +1,6 @@
-import React, { useMemo } from 'react';
-import styles from './usage-guidelines.module.scss';
-import { ElementContent } from '../../types';
+import React, { useMemo } from "react";
+import styles from "./usage-guidelines.module.scss";
+import { ElementContent } from "../../types";
 
 interface UsageGuidelinesProps {
   guidelines: Array<ElementContent>;

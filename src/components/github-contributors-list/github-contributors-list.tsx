@@ -1,8 +1,8 @@
-import { FC, useEffect, useMemo, useState } from 'react';
-import ContributorsList from './contributors-list';
-import Paragraph from '../../../src/components/paragraph/paragraph';
-import { fetchAllContributors } from './github-contributors-utils';
-import { GithubContributor, GithubContributorResponse } from './github-contributors-types';
+import { FC, useEffect, useMemo, useState } from "react";
+import ContributorsList from "./contributors-list";
+import Paragraph from "../../../src/components/paragraph/paragraph";
+import { fetchAllContributors } from "./github-contributors-utils";
+import { GithubContributor, GithubContributorResponse } from "./github-contributors-types";
 
 interface GithubContributorsListProps {
   organizationName: string;
@@ -18,7 +18,7 @@ const GithubContributorsList: FC<GithubContributorsListProps> = ({
   packageName,
   excludedContributorsIds = new Set(),
   staticContributors = [],
-  text = 'Thanks to all of our contributors: ',
+  text = "Thanks to all of our contributors: ",
   showContributionAmount = false,
 }) => {
   const [contributorsJson, setContributorsJson] = useState<GithubContributorResponse[]>([]);

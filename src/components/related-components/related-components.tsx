@@ -1,8 +1,8 @@
-import React, { useMemo } from 'react';
-import { LinkTarget } from '../link/LinkConstants';
-import { withStaticProps } from '../../types';
-import { RelatedComponentsContext } from './related-components-context';
-import styles from './related-components.module.scss';
+import React, { useMemo } from "react";
+import { LinkTarget } from "../link/LinkConstants";
+import { withStaticProps } from "../../types";
+import { RelatedComponentsContext } from "./related-components-context";
+import styles from "./related-components.module.scss";
 
 interface RelatedComponentsProps {
   componentsNames: string[];

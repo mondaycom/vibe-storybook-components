@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import ComponentDescription from '../component-description';
+import type { Meta, StoryObj } from "@storybook/react";
+import ComponentDescription from "../component-description";
 
 const meta: Meta<typeof ComponentDescription> = {
   component: ComponentDescription,
-  title: 'Components/ComponentDescription',
+  title: "Components/ComponentDescription",
 };
 export default meta;
 
@@ -11,7 +11,7 @@ type Story = StoryObj<typeof ComponentDescription>;
 
 export const Overview: Story = {
   args: {
-    description: 'This is a description',
-    children: '',
+    description: "This is a description",
+    children: "",
   },
 };

@@ -1,6 +1,6 @@
-import React from 'react';
-import cx from 'classnames';
-import styles from './visual-description.module.scss';
+import React from "react";
+import cx from "classnames";
+import styles from "./visual-description.module.scss";
 
 interface VisualDescriptionProps {
   title: string;

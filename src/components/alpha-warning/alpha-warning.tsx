@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import Tip from '../tip/tip';
+import { FC } from "react";
+import Tip from "../tip/tip";
 
 const AlphaWarning: FC = () => (
   <Tip emoji="🚧" title="Alpha component" type={Tip.types.WARNING}>

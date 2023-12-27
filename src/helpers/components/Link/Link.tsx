@@ -1,10 +1,10 @@
-import cx from 'classnames';
-import React, { forwardRef, useCallback } from 'react';
-import { NOOP } from '../../utils/function-utils';
-import { LinkTarget } from './LinkConsts';
-import { VibeComponentProps, VibeComponent } from '../../types';
-import { withStaticProps } from '../../../types';
-import styles from './Link.module.scss';
+import cx from "classnames";
+import React, { forwardRef, useCallback } from "react";
+import { NOOP } from "../../utils/function-utils";
+import { LinkTarget } from "./LinkConsts";
+import { VibeComponentProps, VibeComponent } from "../../types";
+import { withStaticProps } from "../../../types";
+import styles from "./Link.module.scss";
 
 interface LinkProps extends VibeComponentProps {
   /**
@@ -41,14 +41,14 @@ const Link: VibeComponent<LinkProps, HTMLAnchorElement> & {
     {
       className,
       textClassName,
-      href = '',
-      text = '',
-      rel = 'noreferrer',
+      href = "",
+      text = "",
+      rel = "noreferrer",
       onClick = NOOP,
       target = Link.targets?.NEW_WINDOW,
-      ariaLabelDescription = '',
-      id = '',
-      ariaLabeledBy = '',
+      ariaLabelDescription = "",
+      id = "",
+      ariaLabeledBy = "",
       disableNavigation = false,
       inheritFontSize = false,
       inlineText = false,

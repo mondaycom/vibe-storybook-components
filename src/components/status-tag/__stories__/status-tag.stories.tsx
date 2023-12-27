@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import StatusTag from '../status-tag';
-import Flex from '../../../helpers/components/Flex/Flex';
+import type { Meta, StoryObj } from "@storybook/react";
+import StatusTag from "../status-tag";
+import Flex from "../../../helpers/components/Flex/Flex";
 
 const meta: Meta<typeof StatusTag> = {
   component: StatusTag,
-  title: 'Components/StatusTag',
+  title: "Components/StatusTag",
 };
 export default meta;
 
@@ -12,7 +12,7 @@ type Story = StoryObj<typeof StatusTag>;
 
 export const Overview: Story = {
   args: {
-    type: 'beta',
+    type: "beta",
   },
 };
 

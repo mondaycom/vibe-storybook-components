@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import cx from 'classnames';
-import { ElementContent } from '../../types';
-import styles from './frame.module.scss';
+import { FC } from "react";
+import cx from "classnames";
+import { ElementContent } from "../../types";
+import styles from "./frame.module.scss";
 
 type FrameProps = {
   children: ElementContent;

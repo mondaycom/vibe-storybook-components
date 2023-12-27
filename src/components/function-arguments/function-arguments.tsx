@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import { ElementContent } from '../../types';
+import { FC } from "react";
+import { ElementContent } from "../../types";
 
 type FunctionArgumentsProps = {
   children: ElementContent;

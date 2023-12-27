@@ -2,4 +2,4 @@
 export {
   StoryMetaSettingsArgs as CreateStoryMetaSettingsArgs,
   StoryMetaSettingsResult as CreateStoryMetaSettingsArgsResult,
-} from '../functions/createStoryMetaSettings/types';
+} from "../functions/createStoryMetaSettings/types";

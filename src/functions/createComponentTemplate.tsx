@@ -1,4 +1,4 @@
-import { ComponentType, ReactElement } from 'react';
+import { ComponentType, ReactElement } from "react";
 
 type ArgsType = {
   [key: string]: unknown;

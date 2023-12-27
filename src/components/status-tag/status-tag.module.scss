@@ -14,7 +14,7 @@
     border-color: var(--sb-negative-color);
   }
 
-  [data-selected='true'] & {
+  [data-selected="true"] & {
     color: var(--sb-text-color-on-primary);
     border-color: var(--sb-text-color-on-primary);
   }

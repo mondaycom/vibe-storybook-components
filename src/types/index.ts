@@ -1,2 +1,2 @@
-export * from './ElementContent';
-export * from './withStaticProps';
+export * from "./ElementContent";
+export * from "./withStaticProps";

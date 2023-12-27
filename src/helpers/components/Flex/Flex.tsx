@@ -1,10 +1,10 @@
-import React, { useMemo } from 'react';
-import cx from 'classnames';
-import { FlexAlign, FlexDirection, FlexGap, FlexJustify } from './FlexConstants';
-import { getStyle } from '../../utils/typesciptCssModulesHelper';
-import { ElementContent, withStaticProps } from '../../../types';
-import { VibeComponentProps } from '../../types';
-import styles from './Flex.module.scss';
+import React, { useMemo } from "react";
+import cx from "classnames";
+import { FlexAlign, FlexDirection, FlexGap, FlexJustify } from "./FlexConstants";
+import { getStyle } from "../../utils/typesciptCssModulesHelper";
+import { ElementContent, withStaticProps } from "../../../types";
+import { VibeComponentProps } from "../../types";
+import styles from "./Flex.module.scss";
 
 interface FlexProps extends VibeComponentProps {
   style?: object;
@@ -31,7 +31,7 @@ const Flex: React.FC<FlexProps> & {
 } = ({
   className,
   id,
-  elementType = 'div',
+  elementType = "div",
   direction = Flex.directions?.ROW,
   wrap = false,
   children,
@@ -43,13 +43,13 @@ const Flex: React.FC<FlexProps> & {
   ariaLabelledby,
   ariaLabel,
   tabIndex,
-  'data-testid': dataTestId,
+  "data-testid": dataTestId,
 }) => {
   const overrideStyle = useMemo(() => ({ ...style, gap: `${gap}px` }), [style, gap]);
   const onClickProps = useMemo(() => {
     if (onClick) return { elementType, ariaLabelledby };
 
-    return { 'aria-labelledby': ariaLabelledby };
+    return { "aria-labelledby": ariaLabelledby };
   }, [onClick, elementType, ariaLabelledby]);
   const Element = elementType;
 

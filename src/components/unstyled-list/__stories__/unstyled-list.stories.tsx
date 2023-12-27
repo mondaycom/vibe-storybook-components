@@ -1,11 +1,11 @@
-import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
-import UnstyledList from '../unstyled-list';
-import UnstyledListItem from '../../unstyled-list-item/unstyled-list-item';
+import React from "react";
+import type { Meta, StoryObj } from "@storybook/react";
+import UnstyledList from "../unstyled-list";
+import UnstyledListItem from "../../unstyled-list-item/unstyled-list-item";
 
 const meta: Meta<typeof UnstyledList> = {
   component: UnstyledList,
-  title: 'Components/UnstyledList',
+  title: "Components/UnstyledList",
 };
 export default meta;
 

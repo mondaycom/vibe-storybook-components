@@ -1,6 +1,6 @@
-import React from 'react';
-import cx from 'classnames';
-import styles from './title.module.scss';
+import React from "react";
+import cx from "classnames";
+import styles from "./title.module.scss";
 
 interface TitleProps extends React.HTMLProps<HTMLHeadingElement> {
   className?: string;
