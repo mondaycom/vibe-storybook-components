@@ -37,7 +37,7 @@
     "copy-mixins-to-dist": "scripts/copy-mixins-to-dist.sh",
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix",
-    "prettier:fix": "prettier --write \"{,!(node_modules)/**/}*.{js,jsx,ts,tsx}\"",
+    "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,scss}\"",
     "test": "jest --passWithNoTests",
     "test:update": "npm run test -- -u",
     "test:stories": "testing=storybook TEST_END_FILES=jest-story jest --passWithNoTests",
